@@ -1,52 +1,9 @@
-// Dark Cleric Class Features //
+// Magus Class Features //
 
-new entry "Dark_Resilience"
+new entry "Passive_Example"
 type "PassiveData"
-data "DisplayName" "32c094ad-1fd3-4326-9916-cf3b88e02df9"
-data "Description" "b4d43514-835b-4b2b-99e6-1ff6082c680f"
-data "Boosts" "Resistance(Necrotic)"
+data "DisplayName" "" // from .loca file //
+data "Description" "" // from .loca file //
+data "Boosts" "UnlockSpell(Spell_Example)" // what does the passive give //
 
-new entry "Shadow_Veil"
-type "PassiveData"
-data "DisplayName" "6a509e28-3e59-4d1c-b56d-0ae9a1cd82a9"
-data "Description" "4d416f40-448f-41b5-b3b5-e4306fa5c686"
-data "Boosts" "UnlockStealthAdvantage()"
-
-
-new entry "Corruption_Aura"
-type "PassiveData"
-data "DisplayName" "089caef4-cbf4-4613-9918-9ac1a90bde1b"
-data "Description" "4c3ca58c-bcf0-4f0a-a586-2faaededa8ed"
-
-new entry "Necrotic_Empowerment"
-type "PassiveData"
-data "DisplayName" "91921d3c-32c2-4c6f-8611-415a97af662d"
-data "Description" "39fb41a0-54b9-4f60-b5b6-0355f31fb884"
-data "Boosts" "IncreaseDamage(Necrotic, 5%)"
-
-new entry "Soul_Drain"
-type "PassiveData"
-data "DisplayName" "208d1f4c-a9bc-4bc1-8352-00d33739663a"
-data "Description" "69a52311-8abc-44bc-8a0f-dcb73c2ed0e3"
-data "Boosts" "HealOnDamage(Necrotic, 5HP)"
-
-
-new entry "Dark_Resilience_Improved"
-type "PassiveData"
-data "DisplayName" "2245ff64-44de-49cf-a512-eeab2aa45bb6"
-data "Description" "100dfd42-9dda-4c87-af79-5d8ed0d61d06"
-data "Boosts" "Immunity(Necrotic)"
-
-
-new entry "Unholy_Conduit"
-type "PassiveData"
-data "DisplayName" "b0cccec1-4e3a-4f0f-a93f-7c77eadda2c2"
-data "Description" "b305f50f-08fd-4341-9900-68a6ddda1d4d"
-data "Boosts" "IncreaseHealing(Necrotic, 10%)"
-
-
-new entry "Eternal_Darkness"
-type "PassiveData"
-data "DisplayName" "e32a2533-5283-468a-879f-c06ad6e8a37e"
-data "Description" "b103642d-b8fa-4fe9-b6ae-46a87c6d83de"
-data "Boosts" "ChanceToSilence(Necrotic, 1 Turn)"
+// Check Modifiers for additional things for what you can do with Passives //

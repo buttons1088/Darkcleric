@@ -4,66 +4,15 @@
     <region id="SpellLists">
         <node id="root">
             <children>
-                <node id="SpellList_Level1">
-                    <attribute id="Spells" type="LSString" value="Darkness;Shadow Bolt;Necrotic Grasp"/>
-                    <attribute id="UUID" type="guid" value="caa5170b-1e50-4e09-b4e0-2ca7a4bf9fcf"/>
+				<node id="SpellList">
+                    <attribute id="Spells" type="LSString" value="Spell1;Spell2;Spell3"/> a list of spell separated by a ;
+                    <attribute id="UUID" type="guid" value="91202cf0-eaf4-4e5d-9f55-f45555555555"/> make a new UUID. refer to this when selecting or adding spells
                 </node>
-
-                <node id="SpellList_Level2">
-                    <attribute id="Spells" type="LSString" value="Eldritch Warding;Necrotic Grasp;Dark Strike"/>
-                    <attribute id="UUID" type="guid" value="256886a5-0ade-4c4d-a2e6-6cdefb90d154"/>
+				<node id="SpellList">
+                    <attribute id="Spells" type="LSString" value="Spell1;Spell2;Spell3"/> you can have multiple lists, and the same spell can be in different lists
+                    <attribute id="UUID" type="guid" value="91202cf0-eaf4-4e5d-9f55-f45555555555"/> make a new UUID
                 </node>
-
-                <node id="SpellList_Level3">
-                    <attribute id="Spells" type="LSString" value="Soul Drain;Unholy Conduit;Necrotic Shield"/>
-                    <attribute id="UUID" type="guid" value="40c433a0-f3c1-42ea-95d0-548f90bebd69"/>
-                </node>
-
-                <node id="SpellList_Level4">
-                    <attribute id="Spells" type="LSString" value="Eternal Darkness;Black Hole;Void Surge;Cursed Strike"/>
-                    <attribute id="UUID" type="guid" value="027f7c72-1ed9-47d2-a843-c3970c6c82b5"/>
-                </node>
-
-                <node id="SpellList_Level5">
-                    <attribute id="Spells" type="LSString" value="Grim Reaper;Shade Form;Dark Resilience;Shadow Veil"/>
-                    <attribute id="UUID" type="guid" value="6bf7134c-fdc1-4042-a4c7-511b2e8a627f"/>
-                </node>
-
-                <node id="SpellList_Level6">
-                    <attribute id="Spells" type="LSString" value="Corruption Aura;Unholy Conduit;Eldritch Warding;Darkness"/>
-                    <attribute id="UUID" type="guid" value="a72b648b-f1a7-4647-806d-4bee5fde5aae"/>
-                </node>
-
-                <node id="SpellList_Level7">
-                    <attribute id="Spells" type="LSString" value="Fallen Aura;Improved Fallen Aura;Necrotic Burst;Dark Strike"/>
-                    <attribute id="UUID" type="guid" value="065e6d65-d24c-4d2d-9c66-bd34e19cbd9a"/>
-                </node>
-
-                <node id="SpellList_Level8">
-                    <attribute id="Spells" type="LSString" value="Ultimate Corruption;Shadow Step;Void Surge;Necrotic Shield"/>
-                    <attribute id="UUID" type="guid" value="06df278f-899f-439b-a9b8-767f88e1b986"/>
-                </node>
-
-                <node id="SpellList_Level9">
-                    <attribute id="Spells" type="LSString" value="Eternal Darkness;Greater Touch of Corruption;Grim Reaper;Shade Form"/>
-                    <attribute id="UUID" type="guid" value="0bee3801-0876-4c58-a24c-fe85e641204f"/>
-                </node>
-
-                <node id="SpellList_Level10">
-                    <attribute id="Spells" type="LSString" value="Ultimate Corruption;Necrotic Burst;Void Surge;Black Hole"/>
-                    <attribute id="UUID" type="guid" value="2561a247-8184-4baf-b8bb-4769a894db3c"/>
-                </node>
-
-                <node id="SpellList_Level11">
-                    <attribute id="Spells" type="LSString" value="Eternal Night;Dark Dominion;Corruption Wave;Shadow Blast"/>
-                    <attribute id="UUID" type="guid" value="d7953996-4488-422e-9b85-462cd94a7813"/>
-                </node>
-
-                <node id="SpellList_Level12">
-                    <attribute id="Spells" type="LSString" value="Abyssal Convergence;Death’s Embrace;Shadow Rift;Unholy Cataclysm"/>
-                    <attribute id="UUID" type="guid" value="d7953996-4488-422e-9b85-462cd94a7813"/>
-                </node>
-            </children>
+			</children>
         </node>
     </region>
 </save>
