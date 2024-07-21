@@ -14,8 +14,8 @@
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> <!-- 0 means main class, 1 means subclass, 2 means race -->
                     <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(PASSIVE_LIST_UUID,1);SelectSkills(SKILL_LIST_UUID,3);SelectSpells(SPELL_LIST_UUID,3,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,4,0)"/> <!-- This is where you can have your class select spells from the spell list, passives from the passive list, and skills from the skill list. SelectAbilityBonus lets you get the +2/+1 at CC -->
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/> <!-- Same UUID as the one in ClassDescriptions.lsx; this refers to the entire table -->
-                    <attribute id="UUID" type="guid" value="5fae54ec-047f-4b9f-be01-5993f983ea01"/> <!-- A unique UUID specifically for this entry within the table -->
+                    <attribute id="TableUUID" type="guid" value="fb3bfa50-2a84-4e37-adc2-964eb0a12ac6"/> <!-- Same UUID as the one in ClassDescriptions.lsx; this refers to the entire table -->
+                    <attribute id="UUID" type="guid" value="c2990740-1e46-4e6b-8200-6bb163562a88"/> <!-- A unique UUID specifically for this entry within the table -->
                 </node>
             </children>
         </node>
