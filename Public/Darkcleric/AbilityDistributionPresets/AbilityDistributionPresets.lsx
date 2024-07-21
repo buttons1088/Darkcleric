@@ -12,7 +12,7 @@
                     <attribute id="Intelligence" type="int32" value="10"/>
                     <attribute id="Strength" type="int32" value="8"/>
                     <attribute id="Wisdom" type="int32" value="16"/>
-					<attribute id="UUID" type="guid" value="7248117e-861b-4045-a11d-7e14d02b9690"/> the UUID for this entry, not needed anywhere else, but you still need to make a new UUID for it
+					<attribute id="UUID" type="guid" value="ac8077ff-685f-4d53-ad75-08936eb8dd20"/> the UUID for this entry, not needed anywhere else, but you still need to make a new UUID for it
                 </node>
             </children>
         </node>
