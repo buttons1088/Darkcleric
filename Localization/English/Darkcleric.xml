@@ -20,22 +20,23 @@
     <content contentuid="he0a953fcgd1feg45c8g9431g134fc75c9012" version="1">External Darkness</content>
     <content contentuid="h8f200d8dg661dg442dg99d6g221f1bc1389d" version="1">You create an area of supernatural darkness that obscures vision, shrouding the battlefield in a veil of shadows.</content>
     
-    <content contentuid="ha31f5c01ge78ag455bg94e2gdf93bbf95cf7" version="1">Nectrotic Bolt</content>
-    <content contentuid="h7186307dga49dg4319gb4efg4734b6661ffe" version="1">A bolt of necrotic energy that deals damage and reduces healing received.</content>
+    <content contentuid="ha31f5c01ge78ag455bg94e2gdf93bbf95cf7" version="1">Necrotic Bolt</content>
+    <content contentuid="h7186307dga49dg4319gb4efg4734b6661ffe" version="1">A bolt of necrotic energy that deals damage and inflicts a status that reduces the target's healing received.</content>
     <content contentuid="hae022a96gaf4fg4a7agb8cfg47eb23676339" version="1">Necrotic Surge</content>
-    <content contentuid="hc886c20ag5dd9g4313g87b5gf40a3bf4acc8" version="1">Unleash a surge of necrotic energy that damages all enemies in a wide area, and applies a debilitating effect that saps their strength.</content>
+    <content contentuid="hc886c20ag5dd9g4313g87b5gf40a3bf4acc8" version="1">Unleash a surge of necrotic energy that damages all enemies in a wide area, and applies a status that makes them fearful.</content>
     <content contentuid="ha50b9c6cg5fcfg497dg9d55g756df8c20893" version="1">Soul Rend</content>
-    <content contentuid="hc0077ce6g5f0bg4303ga058gc96a329c1999" version="1">Rend the soul of your target with a powerful necrotic ray, dealing significant damage and applying a weakening debuff that reduces their combat effectiveness.</content>    
+    <content contentuid="hc0077ce6g5f0bg4303ga058gc96a329c1999" version="1">Rend the soul of your target with a powerful necrotic ray, dealing significant damage and applying a status that paralyzes them.</content>
     <content contentuid="h3bb64356gf71bg4f0fga194g7676f918eb72" version="1">Unholy Blessing</content>
-    <content contentuid="h0156b460g2cf0g45f7gb10ag5c01b79e673d" version="1">Bestow dark blessings upon your allies, enhancing their abilities and granting them necrotic resistance while in your presence.</content>
+    <content contentuid="h0156b460g2cf0g45f7gb10ag5c01b79e673d" version="1">Bestow dark blessings upon your allies, enhancing their abilities and providing them with increased resistance to necrotic damage.</content>
     <content contentuid="h5505563cg5c5dg432cgb9d9g0cb343eee2bb" version="1">Eternal Night</content>
-    <content contentuid="hdfad0a77g43dfg464fg8763g4aa903f82606" version="1">Envelops the area in darkness and inflicts blindness on foes, creating an aura of terror.</content>
+    <content contentuid="hdfad0a77g43dfg464fg8763g4aa903f82606" version="1">Envelops the area in magical darkness and blinds enemies within it, creating an aura of terror.</content>
     <content contentuid="hc2fbe045ga4d3g42d5ga812g8c1562e3b4a5" version="1">Gravebind</content>
-    <content contentuid="h371c5547g7cd7g4f90g9a83g3907b45d3d53" version="1">Conjures binding necrotic energy that snares and damages enemies, slowing their movements.</content>
+    <content contentuid="h371c5547g7cd7g4f90g9a83g3907b45d3d53" version="1">Conjures binding necrotic energy that snares enemies, inflicting damage and holding them in place.</content>
     <content contentuid="h8dc3d830gd058g420bgb5dcga545f009732f" version="1">Shadowfury</content>
-    <content contentuid="hcb37b6e2gd295g4defga85ag7866b31f8ff7" version="1">Unleash a devastating wave of dark energy, causing intense necrotic damage and disorienting foes caught in its path.</content>
+    <content contentuid="hcb37b6e2gd295g4defga85ag7866b31f8ff7" version="1">Unleash a devastating wave of dark energy, causing intense necrotic damage and instilling fear in all affected enemies.</content>
     <content contentuid="h2de7fdaeg3222g4068gaef0g5a393f337c08" version="1">Necrotic Surge</content>
-    <content contentuid="h72552de1g6b17g497eg8a13g1efdc444f178" version="1">Unleash a surge of necrotic energy that deals damage to the target and drains their life force, weakening them and restoring some of your own vitality.</content>
+    <content contentuid="h72552de1g6b17g497eg8a13g1efdc444f178" version="1">Unleash a surge of necrotic energy that deals substantial damage and drains the target’s life force, weakening them and restoring some vitality to you.</content>
+
     <content contentuid="" version="1"></content>
     <content contentuid="" version="1"></content>
     <content contentuid="" version="1"></content>
