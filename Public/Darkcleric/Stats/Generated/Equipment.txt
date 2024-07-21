@@ -1,4 +1,4 @@
-new equipment "EQP_CC_EXAMPLE"
+new equipment "EQP_CC_DARKCLERIC"
 add initialweaponset "Melee"
 add equipmentgroup
 add equipment entry "WPN_Rapier"
