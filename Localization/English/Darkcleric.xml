@@ -4,7 +4,23 @@
 	<content contentuid="h4a6d0b32g11aag4f27g8e8egbca21329111e" version="1">Embrace the shadows with the Dark Cleric, a fallen beacon of celestial grace turned to darker powers. Wield necrotic energies, unleash auras of dread, and dominate the battlefield with dark, devastating spells.</content>
 	<content contentuid="hde67aa1egb925g4377ga700ga40eb78b22f2" version="1">Dark Power</content>
 	<content contentuid="hff232a77g3c53g4b26g8f48g37d355e09e00" version="1">This resource represents the dark power you wield, growing stronger as you embrace the shadows.</content>
-	<content contentuid="" version="1"></content>
+	
+    <content contentuid="h30454733gf8cdg476fg9467g501020b678bf" version="1">Dark Resilience</content>
+    <content contentuid="ha7f78443geb1bg4657g981eg3c650ef8cd13" version="1">You gain resistance to necrotic damage, making you more resilient against dark energies.</content>
+    <content contentuid="h2c05718egc274g45fagb9d7g4e923e61b79f" version="1">Shadow Veil</content>
+    <content contentuid="h32a5afe8g0862g4966ga808gaefa60f40d69" version="1">You gain advantage on Stealth checks when in dim light, allowing you to blend into the shadows more effectively.</content>
+    <content contentuid="h70b2f08eg8f74g454agb76dgf44e29c25c8d" version="1">Corruption Aura</content>
+    <content contentuid="h9945897egac42g4968gbcc8g88b2c549fa32" version="1">You emit an aura of necrotic energy that deals damage to enemies within a radius at the start of their turn.</content>
+    <content contentuid="h0679ec25g37abg493fg936fg4751c82e08b9" version="1">Soul Drain</content>
+    <content contentuid="h5f654145gf500g4b14gbbe7g42ea2632c563" version="1">When you hit with a spell, you heal for a percentage of the damage dealt, siphoning life from your enemies.</content>
+    <content contentuid="h97bb074ag00ecg49a1gb23eg362f034eb99d" version="1">Dark Resilience (Improved)</content>
+    <content contentuid="h6456e957g70adg4060g95cfg85c22a08e3e8" version="1">Your resistance to necrotic damage is enhanced, and you gain immunity to the frightened condition.</content>
+    <content contentuid="h4f5b0f9dg4a59g4e90g8e63gb74b95213c24" version="1">Unholy Conduit</content>
+    <content contentuid="h60a1ef02ga9ebg4278gbbbfgd4429b957c77" version="1">Your spells that deal necrotic damage are increased in potency, dealing additional damage to your foes.</content>
+    <content contentuid="he0a953fcgd1feg45c8g9431g134fc75c9012" version="1">External Darkness</content>
+    <content contentuid="h8f200d8dg661dg442dg99d6g221f1bc1389d" version="1">You create an area of supernatural darkness that obscures vision, shrouding the battlefield in a veil of shadows.</content>
+    
+    <content contentuid="" version="1"></content>
     <content contentuid="" version="1"></content>
     <content contentuid="" version="1"></content>
     <content contentuid="" version="1"></content>
