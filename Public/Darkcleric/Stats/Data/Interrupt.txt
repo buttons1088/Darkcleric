@@ -1,0 +1,60 @@
+// Dark Cleric Interrupts
+
+// Necrotic Shield
+new entry "Interrupt_Necrotic_Shield"
+type "InterruptData"
+data "DisplayName" "nc9088e6a-8647-42c6-b28e-f4ed810217dd" // From .loca file //
+data "Description" "35f6bd66-b7c6-48f7-ad10-9ad30fe5ab53" // From .loca file //
+data "Icon" "Spell_Necrotic_Shield" // Choose an ingame icon or an Icon you made or leave it blank //
+data "InterruptContext" "OnPostRoll;OnPreDamage" // what kind of trigger is this interrupt looking for //
+data "InterruptContextScope" "Self" // what is the scope of the trigger //
+data "Container" "YesNoDecision" // what kind of decision //
+data "Conditions" "TriggerCondition(HEALTH_BELOW_50_PERCENT)" // what conditions has to be met for the interrupt to trigger //
+data "Properties" "ApplyStatus(NECROTIC_SHIELD,1,10)" // what happens when you choose to use it //
+data "Cost" "1 Spell Slot" // what is the resource cost of the interrupt //
+data "InterruptDefaultValue" "Ask;Enabled" // default setting, can be changed in game //
+
+// Dark Reflection
+new entry "Interrupt_Dark_Reflection"
+type "InterruptData"
+data "DisplayName" "e9f1fedb-e015-4074-858a-cb21d2b37429" // From .loca file //
+data "Description" "cf456f04-4b4b-4cbc-8f40-c0aa9a791187" // From .loca file //
+data "Icon" "Spell_Dark_Reflection" // Choose an ingame icon or an Icon you made or leave it blank //
+data "InterruptContext" "OnPostRoll" // what kind of trigger is this interrupt looking for //
+data "InterruptContextScope" "Self" // what is the scope of the trigger //
+data "Container" "YesNoDecision" // what kind of decision //
+data "Conditions" "TriggerCondition(RECEIVE_CRITICAL_HIT)" // what conditions has to be met for the interrupt to trigger //
+data "Properties" "ReflectDamage(50%)" // what happens when you choose to use it //
+data "Cost" "1 Reaction" // what is the resource cost of the interrupt //
+data "InterruptDefaultValue" "Ask;Enabled" // default setting, can be changed in game //
+
+// Unholy Barrier
+new entry "Interrupt_Unholy_Barrier"
+type "InterruptData"
+data "DisplayName" "27ff946e-28ab-4f9b-998f-708088404f05" // From .loca file //
+data "Description" "34260647-1fe0-4377-9b0e-8b4e788a018c" // From .loca file //
+data "Icon" "Spell_Unholy_Barrier" // Choose an ingame icon or an Icon you made or leave it blank //
+data "InterruptContext" "OnPreDamage" // what kind of trigger is this interrupt looking for //
+data "InterruptContextScope" "Self" // what is the scope of the trigger //
+data "Container" "YesNoDecision" // what kind of decision //
+data "Conditions" "TriggerCondition(DAMAGE_TYPE_NECROTIC)" // what conditions has to be met for the interrupt to trigger //
+data "Properties" "ReduceDamage(50%)" // what happens when you choose to use it //
+data "Cost" "1 Spell Slot" // what is the resource cost of the interrupt //
+data "InterruptDefaultValue" "Ask;Enabled" // default setting, can be changed in game //
+
+// Shadow Step
+new entry "Interrupt_Shadow_Step"
+type "InterruptData"
+data "DisplayName" "523b9a3a-b635-44e6-93ad-0c188547f1f9" // From .loca file //
+data "Description" "d8556660-0ccf-42a0-b6f7-5c990a5260a4" // From .loca file //
+data "Icon" "Spell_Shadow_Step" // Choose an ingame icon or an Icon you made or leave it blank //
+data "InterruptContext" "OnPreDamage" // what kind of trigger is this interrupt looking for //
+data "InterruptContextScope" "Self" // what is the scope of the trigger //
+data "Container" "YesNoDecision" // what kind of decision //
+data "Conditions" "TriggerCondition(SURROUNDED_BY_ENEMIES)" // what conditions has to be met for the interrupt to trigger //
+data "Properties" "Teleport(10 feet)" // what happens when you choose to use it //
+data "Cost" "1 Reaction" // what is the resource cost of the interrupt //
+data "InterruptDefaultValue" "Ask;Enabled" // default setting, can be changed in game //
+
+
+// Check Modifiers for additional things you can do with Interrupts //

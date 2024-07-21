@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="4" build="206"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <!-- Passive List for Dark Cleric -->
+                <node id="DarkClericPassives">
+                    <attribute id="Passives" type="LSString" value="DarkResilience,ShadowVeil,CorruptionAura,NecroticEmpowerment,SoulDrain,DarkResilienceImproved,UnholyConduit,EternalDarkness"/>
+                    <attribute id="UUID" type="guid" value="439ca830-fb8b-4bb5-a5da-d1730000ffff"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
