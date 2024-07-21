@@ -15,10 +15,10 @@
                     <attribute id="LearningStrategy" type="uint8" value="1"/>
                     <attribute id="MustPrepareSpells" type="bool" value="true"/> Have this as false if you don't need to prepare them
                     <attribute id="Name" type="FixedString" value="Darkcleric"/> The name of your class
-                    <attribute id="PrimaryAbility" type="uint8" value="4"/> 4 is for int. order goes from Str, Dex, Con, Int, Wis, and Cha.
+                    <attribute id="PrimaryAbility" type="uint8" value="5"/> 4 is for int. order goes from Str, Dex, Con, Int, Wis, and Cha.
                     <attribute id="ProgressionTableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/> This UUID links the Class to a specific progression table inside Progressions.lsx
                     <attribute id="SoundClassType" type="FixedString" value="Wizard"/> Pick a class that your class would be the most similar to
-                    <attribute id="SpellCastingAbility" type="uint8" value="4"/> 4 is for int. order goes from Str, Dex, Con, Int, Wis, and Cha.
+                    <attribute id="SpellCastingAbility" type="uint8" value="5"/> 4 is for int. order goes from Str, Dex, Con, Int, Wis, and Cha.
 					<attribute id="SpellList" type="guid" value="beb9389e-24f8-49b0-86a5-e8d08b6fdc2e"/> This is used for learning spells from scrolls
                     <attribute id="UUID" type="guid" value="94559f86-32d9-4324-9a19-9729fe3212b2"/> The ID for your class, make a new one
 					<children>
