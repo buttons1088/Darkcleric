@@ -4,176 +4,21 @@
     <region id="Progressions">
         <node id="root">
             <children>
-                <!-- Level 1 -->
-                <node id="Level1">
-                    <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ExampleResource,5,0);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Constitution);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);Proficiency(LightArmor)"/>
-                    <attribute id="Level" type="uint8" value="1"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="32c094ad-1fd3-4326-9916-cf3b88e02df9,6a509e28-3e59-4d1c-b56d-0ae9a1cd82a9,089caef4-cbf4-4613-9918-9ac1a90bde1b,91921d3c-32c2-4c6f-8611-415a97af662d,208d1f4c-a9bc-4bc1-8352-00d33739663a,2245ff64-44de-49cf-a512-eeab2aa45bb6,b0cccec1-4e3a-4f0f-a93f-7c77eadda2c2,e32a2533-5283-468a-879f-c06ad6e8a37e"/>
+                <node id="Progression">
+                    <!-- Mainclass Level 1 -->
+                    <attribute id="AllowImprovement" type="bool" value="false"/> <!-- Whether your class gets a feat at this level. Does not work for level 1. -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ExampleResource,5,0);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Constitution);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);Proficiency(LightArmor)"/> <!-- Adds resource, proficiency, etc. -->
+                    <attribute id="Level" type="uint8" value="1"/> <!-- Class Level for this entry -->
+                    <attribute id="Name" type="LSString" value="Example"/> <!-- Name of the class, keep it consistent with class description -->
+                    <attribute id="PassivesAdded" type="LSString" value="Passive1"/> <!-- Most class features usually can be done with passives -->
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(caa5170b-1e50-4e09-b4e0-2ca7a4bf9fcf,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="5fae54ec-047f-4b9f-be01-5993f983ea01"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/> <!-- 0 means main class, 1 means subclass, 2 means race -->
+                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(PASSIVE_LIST_UUID,1);SelectSkills(SKILL_LIST_UUID,3);SelectSpells(SPELL_LIST_UUID,3,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,4,0)"/> <!-- This is where you can have your class select spells from the spell list, passives from the passive list, and skills from the skill list. SelectAbilityBonus lets you get the +2/+1 at CC -->
+                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/> <!-- Same UUID as the one in ClassDescriptions.lsx; this refers to the entire table -->
+                    <attribute id="UUID" type="guid" value="5fae54ec-047f-4b9f-be01-5993f983ea01"/> <!-- A unique UUID specifically for this entry within the table -->
                 </node>
-
-                <!-- Level 2 -->
-                <node id="Level2">
-                    <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value=""/>
-                    <attribute id="Level" type="uint8" value="2"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="32c094ad-1fd3-4326-9916-cf3b88e02df9"/> <!-- Dark Boon: Necrotic Resilience -->
-                    <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(256886a5-0ade-4c4d-a2e6-6cdefb90d154,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="2b95b601-742f-4dbe-b8ee-c5d1fcb4d7f4"/>
-                </node>
-
-                <!-- Level 3 -->
-                <node id="Level3">
-                    <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value=""/>
-                    <attribute id="Level" type="uint8" value="3"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="089caef4-cbf4-4613-9918-9ac1a90bde1b"/> <!-- Fallen Aura -->
-                    <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(40c433a0-f3c1-42ea-95d0-548f90bebd69,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="3b57cf8f-c92c-4a61-9e8e-b7a8c041d09b"/>
-                </node>
-
-                <!-- Level 4 -->
-                <node id="Level4">
-                    <attribute id="AllowImprovement" type="bool" value="true"/>
-                    <attribute id="Boosts" type="LSString" value=""/>
-                    <attribute id="Level" type="uint8" value="4"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
-                    <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(027f7c72-1ed9-47d2-a843-c3970c6c82b5,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="4d12d2b5-78f5-4d23-bac5-e376d3a8cb76"/>
-                </node>
-
-                <!-- Level 5 -->
-                <node id="Level5">
-                    <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value=""/>
-                    <attribute id="Level" type="uint8" value="5"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
-                    <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(6bf7134c-fdc1-4042-a4c7-511b2e8a627f,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="5e1c827b-fba7-487b-b1d1-e96d0c7e6d8f"/>
-                </node>
-
-                <!-- Level 6 -->
-                <node id="Level6">
-                    <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value=""/>
-                    <attribute id="Level" type="uint8" value="6"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="b0cccec1-4e3a-4f0f-a93f-7c77eadda2c2"/> <!-- Shadow Step -->
-                    <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(a72b648b-f1a7-4647-806d-4bee5fde5aae,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="6f9b2b9a-6ed3-4e6a-a7c7-c807f62a45c4"/>
-                </node>
-
-                <!-- Level 7 -->
-                <node id="Level7">
-                    <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value=""/>
-                    <attribute id="Level" type="uint8" value="7"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="92e3543d-32be-4047-aaf0-0da8032f1942"/> <!-- Improved Fallen Aura -->
-                    <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(065e6d65-d24c-4d2d-9c66-bd34e19cbd9a,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="7b8b45f0-e2fc-43eb-bbd2-34c64d51e482"/>
-                </node>
-
-                <!-- Level 8 -->
-                <node id="Level8">
-                    <attribute id="AllowImprovement" type="bool" value="true"/>
-                    <attribute id="Boosts" type="LSString" value=""/>
-                    <attribute id="Level" type="uint8" value="8"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
-                    <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(06df278f-899f-439b-a9b8-767f88e1b986,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="8c4c1e1b-4c5e-4f6e-a673-7f39e63876f7"/>
-                </node>
-
-                <!-- Level 9 -->
-                <node id="Level9">
-                    <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value=""/>
-                    <attribute id="Level" type="uint8" value="9"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="83874070-8968-4f19-bf98-879f09f35334"/> <!-- Greater Touch of Corruption -->
-                    <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(0bee3801-0876-4c58-a24c-fe85e641204f,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="9b6a754b-6a9a-4f0e-a167-bbc96cbdd7e0"/>
-                </node>
-
-                <!-- Level 10 -->
-                <node id="Level10">
-                    <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value=""/>
-                    <attribute id="Level" type="uint8" value="10"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="73028122-f871-4715-804e-96f3b2a52c71"/> <!-- Necrotic Burst -->
-                    <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(2561a247-8184-4baf-b8bb-4769a894db3c,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="a0a40e80-86a4-4c1d-bd91-2d8b63d5a7ae"/>
-                </node>
-
-                <!-- Level 11 -->
-                <node id="Level11">
-                    <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value=""/>
-                    <attribute id="Level" type="uint8" value="11"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="289b0878-7a64-4518-8ad7-4d4186fe73cd"/> <!-- Enhanced Spellcasting -->
-                    <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(d7953996-4488-422e-9b85-462cd94a7813,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="b2837404-e9b7-49a2-b3b5-26b5c339b6ab"/>
-                </node>
-
-                <!-- Level 12 -->
-                <node id="Level12">
-                    <attribute id="AllowImprovement" type="bool" value="true"/>
-                    <attribute id="Boosts" type="LSString" value=""/>
-                    <attribute id="Level" type="uint8" value="12"/>
-                    <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="b0f507a4-7c61-496b-b1ac-f14302f08400"/> <!-- Ultimate Corruption -->
-                    <attribute id="PassivesRemoved" type="LSString" value=""/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(439ca830-fb8b-4bb5-a5da-d1730000ffff,1);SelectSkills(04ebfde0-f884-4797-a74e-b99d25c83372,3);SelectSpells(d7953996-4488-422e-9b85-462cd94a7813,3,0,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="67e8bf8c-2a39-426b-813f-621cd6fc3784"/>
-                    <attribute id="UUID" type="guid" value="c497d132-df93-4d7b-a604-73f030eec7f6"/>
-                </node>
-
             </children>
         </node>
     </region>
-</save>
+    </save>
 
