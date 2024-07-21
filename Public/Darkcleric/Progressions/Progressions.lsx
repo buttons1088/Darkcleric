@@ -6,7 +6,7 @@
             <children>
                 <node id="Progression"> Mainclass Level 1
                     <attribute id="AllowImprovement" type="bool" value="false"/> Whether your class get a feat at his level. Does not work for level 1.
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ExampleResource,5,0);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Constitution);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);Proficiency(LightArmor)"/> Adds resource, proficiency, etc.
+                    <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,5,0);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(SimpleWeapons);Proficiency(LightArmor)"/> Adds resource, proficiency, etc.
                     <attribute id="Level" type="uint8" value="1"/> Class Level for this entry
                     <attribute id="Name" type="LSString" value="Darkcleric"/> Name of the class, keep it consistent with class description
                     <attribute id="PassivesAdded" type="LSString" value="Passive1"/> most class features usually can be done with passives
@@ -15,6 +15,149 @@
                     <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(PASSIVE_LIST_UUID,1);SelectSkills(SKILL_LIST_UUID,3);SelectSpells(SPELL_LIST_UUID,3,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,4,0)"/> this is where you can have your class select spells from spell list, passive from passive list, and skill from skill list. Select ability bonus let you get the +2/+1 at CC
 					<attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="bac02912-f42a-4100-8d04-b452d29440fa"/> a Unique UUID specificaly for this entry within the table
+                </node>
+                <node id="Progression"> Mainclass Level 2
+                    <attribute id="AllowImprovement" type="bool" value="false"/> Whether your class gets a feat at this level.
+                    <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,5,1);ProficiencyBonus(SavingThrow,Wisdom);SelectSpells(SPELL_LIST_UUID,5,1)"/> Adds updated resource, new proficiency, and spell selections.
+                    <attribute id="Level" type="uint8" value="2"/> Class Level for this entry
+                    <attribute id="Name" type="LSString" value="Darkcleric"/> Name of the class, keep it consistent with class description
+                    <attribute id="PassivesAdded" type="LSString" value="Passive2"/> Add new passives or features
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,2);SelectSkills(SKILL_LIST_UUID,4);SelectSpells(SPELL_LIST_UUID,5,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,6,0)"/> Selects additional spells, passives, and skills
+                    <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/> Same UUID as the one in ClassDescriptions.lsx
+                    <attribute id="UUID" type="guid" value="b34e284e-0d79-4eba-a2d8-41513e508db9"/> A Unique UUID specifically for this entry within the table
+                </node>
+                <node id="Progression"> Mainclass Level 3
+                    <attribute id="AllowImprovement" type="bool" value="false"/> Whether your class gets a feat at this level.
+                    <attribute id="Boosts" type="LSString" value="SelectSpells(SPELL_LIST_UUID,7,1)"/> Adds updated resource, new proficiency, and spell selections.
+                    <attribute id="Level" type="uint8" value="3"/> Class Level for this entry
+                    <attribute id="Name" type="LSString" value="Darkcleric"/> Name of the class, keep it consistent with class description
+                    <attribute id="PassivesAdded" type="LSString" value="Passive3"/> Add new passives or features
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,2);SelectSkills(SKILL_LIST_UUID,4);SelectSpells(SPELL_LIST_UUID,5,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,6,0)"/> Selects additional spells, passives, and skills
+                    <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/> Same UUID as the one in ClassDescriptions.lsx
+                    <attribute id="UUID" type="guid" value="a9d0dc9f-d157-4702-944f-2faed7ec62af"/> A Unique UUID specifically for this entry within the table
+                </node>
+                <node id="Progression"> Mainclass Level 4
+                    <attribute id="AllowImprovement" type="bool" value="true"/> Whether your class gets a feat at this level.
+                    <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,5,2);SelectSpells(SPELL_LIST_UUID,7,1)"/> Adds updated resource, new proficiency, and spell selections.
+                    <attribute id="Level" type="uint8" value="4"/> Class Level for this entry
+                    <attribute id="Name" type="LSString" value="Darkcleric"/> Name of the class, keep it consistent with class description
+                    <attribute id="PassivesAdded" type="LSString" value="Passive3"/> Add new passives or features
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,2);SelectSkills(SKILL_LIST_UUID,4);SelectSpells(SPELL_LIST_UUID,5,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,6,0)"/> Selects additional spells, passives, and skills
+                    <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/> Same UUID as the one in ClassDescriptions.lsx
+                    <attribute id="UUID" type="guid" value="1f1dd242-2497-4fb6-aa0b-ea4e11600557"/> A Unique UUID specifically for this entry within the table
+                </node>
+                <node id="Progression"> Mainclass Level 5
+                    <attribute id="AllowImprovement" type="bool" value="false"/> Whether your class gets a feat at this level.
+                    <attribute id="Boosts" type="LSString" value="SelectSpells(SPELL_LIST_UUID,7,1)"/> Adds updated resource, new proficiency, and spell selections.
+                    <attribute id="Level" type="uint8" value="5"/> Class Level for this entry
+                    <attribute id="Name" type="LSString" value="Darkcleric"/> Name of the class, keep it consistent with class description
+                    <attribute id="PassivesAdded" type="LSString" value="Passive3"/> Add new passives or features
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,2);SelectSkills(SKILL_LIST_UUID,4);SelectSpells(SPELL_LIST_UUID,5,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,6,0)"/> Selects additional spells, passives, and skills
+                    <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/> Same UUID as the one in ClassDescriptions.lsx
+                    <attribute id="UUID" type="guid" value="1f1dd242-2497-4fb6-aa0b-ea4e11600557"/> A Unique UUID specifically for this entry within the table
+                </node>
+                <node id="Progression"> Mainclass Level 6
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="SelectSpells(SPELL_LIST_UUID,7,1)"/>
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Darkcleric"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Passive4"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,3);SelectSkills(SKILL_LIST_UUID,5);SelectSpells(SPELL_LIST_UUID,6,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,7,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/>
+                    <attribute id="UUID" type="guid" value="07ec47d3-66ae-4313-94a9-38e069d597c2"/>
+                </node>
+                            <!-- Level 7 -->
+                <node id="Progression"> Mainclass Level 7
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="SelectSpells(SPELL_LIST_UUID,8,1)"/>
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Darkcleric"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Passive4"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,3);SelectSkills(SKILL_LIST_UUID,5);SelectSpells(SPELL_LIST_UUID,6,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,7,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/>
+                    <attribute id="UUID" type="guid" value="a806a8b6-c9f9-47e6-aaa5-fedc454a6313"/>
+                </node>
+                
+                <!-- Level 8 -->
+                <node id="Progression"> Mainclass Level 8
+                    <attribute id="AllowImprovement" type="bool" value="true"/> <!-- Feat at this level -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,5,3);SelectSpells(SPELL_LIST_UUID,8,1)"/>
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Darkcleric"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Passive4"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,3);SelectSkills(SKILL_LIST_UUID,5);SelectSpells(SPELL_LIST_UUID,6,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,7,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/>
+                    <attribute id="UUID" type="guid" value="61ab92ce-d5cf-4945-8f74-67cc44b7326b"/>
+                </node>
+                
+                <!-- Level 9 -->
+                <node id="Progression"> Mainclass Level 9
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="SelectSpells(SPELL_LIST_UUID,8,1)"/>
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Darkcleric"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Passive5"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,4);SelectSkills(SKILL_LIST_UUID,5);SelectSpells(SPELL_LIST_UUID,6,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,7,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/>
+                    <attribute id="UUID" type="guid" value="a944ec7f-535e-405c-8296-8dbf11de6cad"/>
+                </node>
+                
+                <!-- Level 10 -->
+                <node id="Progression"> Mainclass Level 10
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="SelectSpells(SPELL_LIST_UUID,8,1)"/>
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Darkcleric"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Passive5"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,4);SelectSkills(SKILL_LIST_UUID,5);SelectSpells(SPELL_LIST_UUID,6,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,7,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/>
+                    <attribute id="UUID" type="guid" value="4c648f1c-d384-43b7-a896-2268a91f59b8"/>
+                </node>
+                
+                <!-- Level 11 -->
+                <node id="Progression"> Mainclass Level 11
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="SelectSpells(SPELL_LIST_UUID,8,1)"/>
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Darkcleric"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Passive6"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,4);SelectSkills(SKILL_LIST_UUID,5);SelectSpells(SPELL_LIST_UUID,6,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,7,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/>
+                    <attribute id="UUID" type="guid" value="f4eeaf1e-d8ac-47cc-bc31-ed6c36f94fba"/>
+                </node>
+                
+                <!-- Level 12 -->
+                <node id="Progression"> Mainclass Level 12
+                    <attribute id="AllowImprovement" type="bool" value="true"/> <!-- Feat at this level -->
+                    <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,5,3);SelectSpells(SPELL_LIST_UUID,8,1)"/>
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Darkcleric"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Passive6"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,4);SelectSkills(SKILL_LIST_UUID,5);SelectSpells(SPELL_LIST_UUID,6,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,7,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/>
+                    <attribute id="UUID" type="guid" value="fc847ea2-78c6-4580-9b0a-bab0e5904dc8"/>
                 </node>
             </children>
         </node>
