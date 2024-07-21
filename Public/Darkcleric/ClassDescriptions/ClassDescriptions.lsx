@@ -17,16 +17,16 @@
                     <attribute id="Name" type="FixedString" value="Darkcleric"/> The name of your class
                     <attribute id="PrimaryAbility" type="uint8" value="5"/> 4 is for int. order goes from Str, Dex, Con, Int, Wis, and Cha.
                     <attribute id="ProgressionTableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/> This UUID links the Class to a specific progression table inside Progressions.lsx
-                    <attribute id="SoundClassType" type="FixedString" value="Wizard"/> Pick a class that your class would be the most similar to
+                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/> Pick a class that your class would be the most similar to
                     <attribute id="SpellCastingAbility" type="uint8" value="5"/> 4 is for int. order goes from Str, Dex, Con, Int, Wis, and Cha.
 					<attribute id="SpellList" type="guid" value="beb9389e-24f8-49b0-86a5-e8d08b6fdc2e"/> This is used for learning spells from scrolls
                     <attribute id="UUID" type="guid" value="94559f86-32d9-4324-9a19-9729fe3212b2"/> The ID for your class, make a new one
 					<children>
                         <node id="Tags">
-                            <attribute id="Object" type="guid" value="6fe3ae27-dc6c-4fc9-9245-710c790c396c"/> Dialogue tag Wizard
+                            <attribute id="Object" type="guid" value="1671b4bf-4f47-4bb7-9cb9-80bb1f6009d5"/> Cleric tag 
                         </node>
                         <node id="Tags">
-                            <attribute id="Object" type="guid" value="1ae7017c-4884-4a43-bc4a-742fa0d201c0"/> Dialogue tag Fighter (yes you can have multiple dialogue tags)
+                            <attribute id="Object" type="guid" value="c7bdcdf2-15e7-456e-adf1-21dda3172e18"/> Paladin Oathbreaker tag
                         </node>
                     </children>
                 </node>
