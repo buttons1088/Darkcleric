@@ -38,3 +38,29 @@ data "SpellRoll" "ActionPoint:1;SpellSlotsGroup:1:1:2" <!-- Use action points an
 data "SuccessEffect" "DealDamage(3d8,Necrotic,Magical);ApplyStatus(SoulRend_Debuff,100,10)" <!-- Effects on successful cast -->
 data "CastSound" "Spell_Cast_Damage_Necrotic_SoulRend_L1to3" <!-- Sound effect for casting -->
 data "Animation" "Projectile_RayOfEnfeeblement" <!-- Animation template -->
+
+new entry "CL_UnholyBlessing"
+type "SpellData"
+using "Shout_AuraOf_Terror"
+data "Level" "4"
+data "Icon" "GenericIcon_Intent_Control"
+data "DisplayName" "h3bb64356gf71bg4f0fga194g7676f918eb72"
+data "Description" "h0156b460g2cf0g45f7gb10ag5c01b79e673d"
+data "SpellRoll" "ActionPoint:1;SpellSlotsGroup:1:1:2"
+data "SuccessEffects" "ApplyStatus(UNHOLY_BLESSING, 100, 10);BuffAllies(NecroticResistance, 10%)"
+data "CastSound" "CrSpell_Cast_AuraOfTerror"
+data "AnimationTemplate" "Shout_AuraOf_Terror"
+data "TooltipStatusApply" "UNHOLY_BLESSING"
+
+new entry "CL_EternalNight"
+type "SpellData"
+using "Target_Darkness"
+data "Level" "4" // Adjust if needed based on game mechanics
+data "Icon" "Spell_Evocation_Darkness"
+data "DisplayName" "h5505563cg5c5dg432cgb9d9g0cb343eee2bb"
+data "Description" "hdfad0a77g43dfg464fg8763g4aa903f82606"
+data "SpellRoll" "ActionPoint:1;SpellSlotsGroup:1:1:2"
+data "SuccessEffects" "CreateArea(Darkness, Radius);ApplyStatus(CL_STATUS_BLIND,100,1)"
+data "CastSound" "Spell_Cast_Utility_Darkness_L1to3"
+data "AnimationTemplate" "Target_Darkness"
+data "TooltipStatusApply" "CL_STATUS_BLIND"
