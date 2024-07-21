@@ -19,7 +19,7 @@
                     <attribute id="ProgressionTableUUID" type="guid" value="fb3bfa50-2a84-4e37-adc2-964eb0a12ac6"/> This UUID links the Class to a specific progression table inside Progressions.lsx
                     <attribute id="SoundClassType" type="FixedString" value="Cleric"/> Pick a class that your class would be the most similar to
                     <attribute id="SpellCastingAbility" type="uint8" value="5"/> 5 is for Wis. order goes from Str, Dex, Con, Int, Wis, and Cha.
-					<attribute id="SpellList" type="guid" value="beb9389e-24f8-49b0-86a5-e8d08b6fdc2e"/> This is used for learning spells from scrolls
+					<attribute id="SpellList" type="guid" value="91202cf0-eaf4-4e5d-9f55-f45555555555"/> This is used for learning spells from scrolls
                     <attribute id="UUID" type="guid" value="7248117e-861b-4045-a11d-7e14d02b9690"/> The ID for your class, make a new one
 					<children>
                         <node id="Tags">
