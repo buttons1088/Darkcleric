@@ -716,7 +716,7 @@
                 </node>
                 <node id="TextureAtlasPath">
                     <attribute id="Path" type="string" value="Assets/Textures/Icons/Icons_Magus.dds"/> the file path to the .DDS image
-                    <attribute id="UUID" type="FixedString" value="783d853b-93f4-4ab3-8ae1-a958035f6c12"/> the UUID inside the _merged.lsx file for this image
+                    <attribute id="UUID" type="FixedString" value="fd09166f-c29c-43b0-a0f0-f9f08d1a447c"/> the UUID inside the _merged.lsx file for this image
                 </node>
                 <node id="TextureAtlasTextureSize">
                     <attribute id="Height" type="int32" value="1280"/> the height of the .DDS image
