@@ -1,0 +1,40 @@
+new entry "CL_NecroticBolt"
+type "SpellData"
+using "CL_Target_ChillTouch"
+data "Level" "1" <!-- Adjusted for spell slot level -->
+data "Icon" "Spell_Necromancy_ChillTouch"
+data "DisplayName" "ha31f5c01ge78ag455bg94e2gdf93bbf95cf7"
+data "Description" "h7186307dga49dg4319gb4efg4734b6661ffe"
+data "SpellRoll" "ActionPoint:1;SpellSlotsGroup:1:1:1" <!-- Adjust this based on spell slot level and availability -->
+data "SuccessEffects" "ApplyStatus(CL_STATUS_NECROTIC_BOLT,100,1);DealDamage(LevelMapValue(D8Cantrip), Necrotic, Magical)"
+data "CastSound" "Spell_Cast_Damage_Necrotic_NecroticBolt_L1to3_01"
+data "AnimationTemplate" "CL_Target_ChillTouch"
+data "TooltipStatusApply" "ApplyStatus(CL_STATUS_NECROTIC_BOLT,100,1)"
+
+new entry "CL_NecroticSurge"
+type "SpellData"
+using "Zone_Thunderwave"
+data "Level" "3"
+data "Icon" "Spell_Necromancy_NecroticSurge"
+data "DisplayName" "hae022a96gaf4fg4a7agb8cfg47eb23676339"
+data "Description" "hc886c20ag5dd9g4313g87b5gf40a3bf4acc8"
+data "SpellRoll" "ActionPoint:2;SpellSlotsGroup:1:1:1"
+data "SuccessEffects" "DealDamage(2d8,Necrotic,Magical);Force(8, OriginToTarget);ApplyStatus(CL_STATUS_FEAR,100,1)"
+data "CastSound" "Spell_Cast_Damage_Necrotic_NecroticSurge_L1to3_01"
+data "AnimationTemplate" "Zone_Thunderwave"
+data "TooltipStatusApply" "CL_STATUS_FEAR"
+
+new entry "CL_SoulRend"
+type "SpellData"
+using "Projectile_RayOfEnfeeblement" <!-- Base spell template -->
+data "Level" "3" <!-- Adjust to the appropriate level for the spell -->
+data "Icon" "Spell_Necromancy_SoulRend" <!-- Choose an appropriate icon -->
+data "DisplayName" "ha50b9c6cg5fcfg497dg9d55g756df8c20893" <!-- Unique display name -->
+data "Description" "hc0077ce6g5f0bg4303ga058gc96a329c1999" <!-- Unique description -->
+data "SpellProperties" "DealDamage(3d8,Necrotic,Magical);ApplyStatus(SoulRend_Debuff,100,10)" <!-- Custom spell effects -->
+data "TooltipStatusApply" "ApplyStatus(SoulRend_Debuff,100,10)" <!-- Tooltip for debuff application -->
+data "UseCost" "ActionPoint:1;SpellSlotsGroup:1:1:2" <!-- Cost for casting the spell -->
+data "SpellRoll" "ActionPoint:1;SpellSlotsGroup:1:1:2" <!-- Use action points and spell slots -->
+data "SuccessEffect" "DealDamage(3d8,Necrotic,Magical);ApplyStatus(SoulRend_Debuff,100,10)" <!-- Effects on successful cast -->
+data "CastSound" "Spell_Cast_Damage_Necrotic_SoulRend_L1to3" <!-- Sound effect for casting -->
+data "Animation" "Projectile_RayOfEnfeeblement" <!-- Animation template -->
