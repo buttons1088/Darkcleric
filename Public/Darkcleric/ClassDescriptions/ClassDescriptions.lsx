@@ -7,7 +7,7 @@
                 <node id="ClassDescription"> Main Class
                     <attribute id="BaseHp" type="int32" value="10"/> Hit Die
                     <attribute id="CanLearnSpells" type="bool" value="true"/>
-                    <attribute id="ClassEquipment" type="FixedString" value="EQP_DarkCleric"/> Starting equipment entry from Equipment.txt
+                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_DarkCleric"/> Starting equipment entry from Equipment.txt
                     <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/> Copy this off of another base game class (Im using the wizard's creation post)
                     <attribute id="Description" type="TranslatedString" handle="h6312a637gea5eg4203gb9e6gcc54fe1301a3" version="1"/> Link to the .loca file
                     <attribute id="DisplayName" type="TranslatedString" handle="h0facb8b5g58f0g49b3gb030g9b9aa1b99528" version="1"/> Link to the .loca file
