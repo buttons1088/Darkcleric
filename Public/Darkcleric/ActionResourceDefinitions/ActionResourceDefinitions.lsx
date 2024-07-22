@@ -11,10 +11,10 @@
                     <attribute id="Error" type="FixedString" value="ActionResourceDefinitions_New_Stat_4_Error"/>
                     <attribute id="IsSpellResource" type="bool" value="true"/> Is this resource used to cast spells
                     <attribute id="MaxLevel" type="uint32" value="12"/>
-                    <attribute id="MaxValue" type="uint32" value="3"/>
+                    <attribute id="MaxValue" type="uint32" value="12"/>
                     <attribute id="Name" type="FixedString" value="DarkPower"/> What you will be referring to in your code
                     <attribute id="PartyActionResource" type="bool" value="false"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/> Rest = Long Rest, ShortRest = ShortRest
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/> Rest = Long Rest, ShortRest = ShortRest
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/> If the resource will be displayed on your hotbar
                     <attribute id="UUID" type="guid" value="1c01be9c-3e79-4d50-9390-1cc81d1016bf"/> UUID for the Resource, give it a new one
                     <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/> Would this resource be used at different power levels
