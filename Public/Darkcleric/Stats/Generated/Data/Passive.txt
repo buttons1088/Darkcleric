@@ -1,3 +1,12 @@
+<node id="CL_PassiveStrengthBoost">
+    <attribute id="Description" type="TranslatedString" handle="h85ea4598g376cg43ecg8cb3gfc5cbb530d1c;1"/>
+    <attribute id="DisplayName" type="TranslatedString" handle="hbb27c9b1g0d5bg4e2fg8088g8ad722028dc0;1"/>
+    <attribute id="StatsType" type="FixedString" value="Boost"/>
+    <attribute id="Boost" type="LSString" value="Attribute(Strength,2)"/>
+    <attribute id="StatusType" type="FixedString" value="PERSISTENT"/>
+    <attribute id="UUID" type="guid" value="your_unique_guid_here"/>
+</node>
+
 new entry "CL_PassiveDarkResilience"
 type "PassiveData"
 data "DisplayName" "h30454733gf8cdg476fg9467g501020b678bf;1"

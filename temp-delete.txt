@@ -1,14 +1,3 @@
-new entry "CL_NecroticBolt"
-type "SpellData"
-using "CL_Target_FireBolt"
-data "Level" "1"
-data "Icon" "Spell_NecroticBolt"
-data "DisplayName" "Necrotic Bolt"
-data "Description" "A bolt of necrotic energy that deals damage and reduces healing received."
-data "SpellProperties" "DealDamage(Necrotic,2d6);ApplyStatus(CL_STATUS_NECROTIC_WOUND, 100, 2)"
-data "TooltipStatusApply" "ApplyStatus(CL_STATUS_NECROTIC_WOUND, 100, 2)"
-
-
 new entry "CL_DarkVortex"
 type "SpellData"
 using "CL_Target_Thunderwave"
@@ -19,16 +8,6 @@ data "Description" "Creates a vortex of dark energy that pulls enemies towards t
 data "SpellProperties" "DealDamage(Necrotic,3d6);ApplyStatus(CL_STATUS_PULL, 100, 1)"
 data "TooltipStatusApply" "ApplyStatus(CL_STATUS_PULL, 100, 1)"
 
-
-new entry "CL_SoulRend"
-type "SpellData"
-using "CL_Target_InflictWounds"
-data "Level" "3"
-data "Icon" "Spell_SoulRend"
-data "DisplayName" "Soul Rend"
-data "Description" "Rends the soul of the target, dealing necrotic damage and reducing their attack power."
-data "SpellProperties" "DealDamage(Necrotic,4d6);ApplyStatus(CL_STATUS_WEAKEN, 100, 3)"
-data "TooltipStatusApply" "ApplyStatus(CL_STATUS_WEAKEN, 100, 3)"
 
 new entry "CL_EternalNight"
 type "SpellData"

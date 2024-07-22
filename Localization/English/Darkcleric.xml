@@ -19,7 +19,10 @@
     <content contentuid="h60a1ef02ga9ebg4278gbbbfgd4429b957c77" version="1">Your spells that deal necrotic damage are increased in potency, dealing additional damage to your foes.</content>
     <content contentuid="he0a953fcgd1feg45c8g9431g134fc75c9012" version="1">External Darkness</content>
     <content contentuid="h8f200d8dg661dg442dg99d6g221f1bc1389d" version="1">You create an area of supernatural darkness that obscures vision, shrouding the battlefield in a veil of shadows.</content>
-    
+    <content contentuid="h85ea4598g376cg43ecg8cb3gfc5cbb530d1c" version="1">Permanent +2 Strength</content>
+    <content contentuid="hbb27c9b1g0d5bg4e2fg8088g8ad722028dc0" version="1">Strength of the Dark Cleric</content>
+
+
     <content contentuid="ha31f5c01ge78ag455bg94e2gdf93bbf95cf7" version="1">Necrotic Bolt</content>
     <content contentuid="h7186307dga49dg4319gb4efg4734b6661ffe" version="1">A bolt of necrotic energy that deals damage and inflicts a status that reduces the target's healing received.</content>
     <content contentuid="hae022a96gaf4fg4a7agb8cfg47eb23676339" version="1">Necrotic Surge</content>
