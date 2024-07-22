@@ -1,0 +1,12 @@
+new entry "CL_STATUS_NECROTIC_WOUND"
+type "StatusData"
+data "StatusType" "EFFECT"
+data "DisplayName" "h0fe49f4cge1e3g4d8fg979bgda3d0dc344be"  // Unique identifier for display name
+data "Description" "hcf626bdbg59a8g4896ga622geaff55da0280"  // Unique identifier for description
+data "DescriptionParams" ""  // Leave empty if no additional parameters are needed
+data "Icon" "Icon_Necrotic_Wound"  // Define or use an existing icon for visual representation
+data "StatusPropertyFlags" ""  // Additional properties if needed
+data "StatusEffect" "ccd41395-27d3-43bf-9ed8-dceb54f8c5c5"  // Unique UUID for this effect
+data "IsPermanent" "False"  // Status is not permanent
+data "Duration" "2"  // Duration in turns
+data "Stackable" "False"  // Status is not stackable
