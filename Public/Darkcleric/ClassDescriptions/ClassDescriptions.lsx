@@ -11,6 +11,7 @@
                     <attribute id="Description" type="TranslatedString" handle="h4a6d0b32g11aag4f27g8e8egbca21329111e" version="1"/> Link to the .loca file
                     <attribute id="DisplayName" type="TranslatedString" handle="hc4dcbcc7g1f83g4331gac92g14f5a4896e7d" version="1"/> Link to the .loca file
                     <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_DARKCLERIC"/> Starting equipment entry from Equipment.txt
+                    <attribute id="ParentGuid" type="guid" value="317969bf-6651-4dce-8aa1-7c1196b233ce"/>
                     <attribute id="HpPerLevel" type="int32" value="5"/> Half Hit Die + 1
                     <attribute id="LearningStrategy" type="uint8" value="1"/>
                     <attribute id="MustPrepareSpells" type="bool" value="true"/> Have this as false if you don't need to prepare them
