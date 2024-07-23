@@ -5,7 +5,7 @@
         <node id="root">
             <children>
                 <node id="SkillList"> Class Skills
-                    <attribute id="Skills" type="LSString" value="Atheletics, Acrobatics, Arcana, History, Investigation, Perception, Medicine, Religion, Survival"/> List of skills to choose at CC
+                    <attribute id="Skills" type="LSString" value="Athletics, Arcana, History, Insight, Religion, Intimidation"/> List of skills to choose at CC
                     <attribute id="UUID" type="guid" value="8edef7fa-ae2a-4b4b-a324-0850fcf515e3"/>
 				<node id="SkillList"> Class Skills
                     <attribute id="Skills" type="LSString" value=""/> you can add more than one list

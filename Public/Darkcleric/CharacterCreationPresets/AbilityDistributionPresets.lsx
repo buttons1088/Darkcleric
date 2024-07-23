@@ -5,14 +5,14 @@
         <node id="root">
             <children>
                 <node id="AbilityDistributionPreset">
-                    <attribute id="ClassUUID" type="guid" value="04a74cef-c7a8-44d0-996c-f45555555555"/> UUID for the class so the game knows which one it is looking at
-                    <attribute id="Charisma" type="int32" value="8"/>
-					<attribute id="Constitution" type="int32" value="8"/>
-                    <attribute id="Dexterity" type="int32" value="8"/>
-                    <attribute id="Intelligence" type="int32" value="8"/>
-                    <attribute id="Strength" type="int32" value="8"/>
-                    <attribute id="Wisdom" type="int32" value="8"/>
-					<attribute id="UUID" type="guid" value="462a0090-3eb0-4fad-adb5-f45555555555"/> the UUID for this entry, not needed anywhere else, but you still need to make a new UUID for it
+                    <attribute id="ClassUUID" type="guid" value="94559f86-32d9-4324-9a19-9729fe3212b2"/> 
+                    <attribute id="Charisma" type="int32" value="10"/> 
+                    <attribute id="Constitution" type="int32" value="14"/> 
+                    <attribute id="Dexterity" type="int32" value="12"/> 
+                    <attribute id="Intelligence" type="int32" value="8"/> 
+                    <attribute id="Strength" type="int32" value="14"/> 
+                    <attribute id="Wisdom" type="int32" value="16"/> 
+                    <attribute id="UUID" type="guid" value="317969bf-6651-4dce-8aa1-7c1196b233ce"/> 
                 </node>
             </children>
         </node>
