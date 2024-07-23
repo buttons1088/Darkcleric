@@ -62,7 +62,7 @@
 
                 <!-- Level 5 -->
                 <node id="Progression"> Mainclass Level 5
-                    <attribute id="AllowImprovement" type="bool" value="truefalse"/>
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
                     <attribute id="Boosts" type="LSString" value="CL_PassiveShadowVeil_StealthCheck;ActionResource(DarkPower,6,0);SelectSpells(SPELL_LIST_UUID,10,1)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
