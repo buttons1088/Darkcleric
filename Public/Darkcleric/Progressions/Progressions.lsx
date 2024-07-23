@@ -134,7 +134,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,11,0);ActionResource(SpellSlot,1,5))"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveDarkShadow"/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(DARK_CLERIC_SPELL_GUIDD"/>
@@ -148,7 +148,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,12,0);ActionResource(SpellSlot,1,6)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveDarknessDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(DARK_CLERIC_SPELL_GUIDD)"/>
@@ -162,10 +162,10 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,12,0)"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveDarkEclipse"/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpell(CL_DarkEclipse)"/>
                     <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/>
                     <attribute id="UUID" type="guid" value="e2a62492-6e8e-4112-a2e5-0b2f544c1e8e"/>
                 </node>
