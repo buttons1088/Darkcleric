@@ -21,15 +21,14 @@ data "StatusGroups" "SG_RemoveOnRespec"
 new entry "CL_ShadowVeil_StealthCheck"
 type "StatusData"
 data "StatusType" "BOOST"
-data "DisplayName" "h2c05718egc274g45fagb9d7g4e923e61b79f;1"
-data "Description" "h32a5afe8g0862g4966ga808gaefa60f40d69;1"
+data "DisplayName" "h2c05718egc274g45fagb9d7g4e923e61b79f;1" <!-- Name handle -->
+data "Description" "h32a5afe8g0862g4966ga808gaefa60f40d69;1" <!-- Description handle -->
 data "Icon" "Mailem_DK_ShadowVeil"  <!-- Placeholder Icon -->
 data "StackId" "CL_SHADOWVEIL"
 data "StackPriority" "0"
-data "Boosts" "Skill(Stealth, Advantage, DimLight)"
-data "StatusGroups" "SG_RemoveOnRespec"
-data "StatusEffect" "5c9cf7f9-1d85-4bc4-a4f1-1496463aace3"
-
+data "Boosts" "Advantage(Skill, Stealth)" <!-- Advantage on Stealth checks -->
+data "StatusGroups" "SG_RemoveOnRespec" <!-- Removed upon respeccing -->
+data "StatusEffect" "5c9cf7f9-1d85-4bc4-a4f1-1496463aace3" <!-- GUID for visual effect, if any -->
 
 new entry "CL_CORRUPTION_AURA_DAMAGE"
 type "StatusData"
@@ -51,3 +50,12 @@ data "OnApplyFail" "IF(not HasStatus('CORRUPTION_AURA_DAMAGE_RECEIVED')):DealDam
 data "OnTickSuccess" "IF(not HasStatus('CORRUPTION_AURA_DAMAGE_RECEIVED')):DealDamage(3d8,Necrotic,Magical);ApplyStatus(CORRUPTION_AURA_DAMAGE_RECEIVED,100,1)"
 data "OnTickFail" "IF(not HasStatus('CORRUPTION_AURA_DAMAGE_RECEIVED')):DealDamage(3d8/2,Necrotic,Magical);ApplyStatus(CORRUPTION_AURA_DAMAGE_RECEIVED,100,1)"
 data "StatusEffect" "c07a2ba4-6b35-41e4-8d45-23ed8cd9901d"
+
+new entry "CL_UNHOLY_CONDUIT_BOOST"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DescriptionParams" "IncreaseSpellDamage(2d8,Necrotic)" <!-- Adjusted for your needs -->
+data "TooltipDamage" "IncreaseSpellDamage(2d8,Necrotic)" <!-- Tooltip damage value -->
+data "OnApplySuccess" "IncreaseDamage(2d8,Necrotic)" <!-- Increases necrotic damage on success -->
+data "OnApplyFail" "IncreaseDamage(1d8,Necrotic)" <!-- Increases necrotic damage on failure -->
+data "StatusEffect" "adab6ea6-3ae9-4e2e-89e3-9bc7df8f2832"

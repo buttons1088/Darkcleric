@@ -42,6 +42,27 @@ data "StatsFunctors" "ApplyStatus(CL_CORRUPTION_AURA_DAMAGE,100,-1)" <!-- Applie
 data "StatusGroups" "SG_RemoveOnRespec" <!-- Ensure the passive is removed upon respeccing -->
 data "StatusEffect" "" <!-- Optional: Come fill this in later -->
 
+new entry "CL_PassiveUnholyConduit"
+type "PassiveData"
+data "DisplayName" "h4f5b0f9dg4a59g4e90g8e63gb74b95213c24;1" <!-- Link to name handle -->
+data "Description" "h60a1ef02ga9ebg4278gbbbfgd4429b957c77;1" <!-- Link to description handle -->
+data "Icon" "UnholyConduitIcon" <!-- Placeholder or custom icon -->
+data "StatsFunctorContext" "OnSpellCast" <!-- Applies when a spell is cast -->
+data "Conditions" "HasStatus(UnholyConduitActive)" <!-- Applies if the condition is met -->
+data "StatsFunctors" "ApplyStatus(CL_UNHOLY_CONDUIT_BOOST,100,-1)" <!-- Applies a new boost effect -->
+data "StatusGroups" "SG_RemoveOnRespec" <!-- Ensure the passive is removed upon respeccing -->
+data "StatusEffect" "" <!-- Optional: You might want to define a specific status effect for visuals -->
+
+new entry "CL_DarkFortitudeUnleashed"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h45dd1f16ge693g4453g87f8gbdde4fd73ff3;1" <!-- Handle for DisplayName -->
+data "Description" "hac6cd796gcb3bg4af1g8714g63f0c6483bd3;1" <!-- Handle for Description -->
+data "Icon" "Mailem_DK_DarkFortitude" <!-- Placeholder Icon -->
+data "StackId" "CL_DARKFORTITUDE"
+data "Boosts" "IncreaseMaxHP(2)" <!-- New HP increase value -->
+data "StatusGroups" "SG_RemoveOnRespec"
+
 new entry "CL_SoulDrain"
 type "PassiveData"
 data "DisplayName" "h4f845a8bg36edg474dg9731g4cabf1533303;1"
@@ -60,17 +81,6 @@ data "StatsFunctors" "Resistance(Necrotic);Immunity(Frightened)"
 data "Icon" "Mailem_DK_DarkResilienceImproved" <!-- Placeholder Icon -->
 data "Properties" "Highlighted"
 data "StatsFunctorContext" "OnDamageTaken"
-data "Conditions" "true"
-data "DescriptionParams" "" <!-- No additional parameters needed -->
-
-new entry "CL_PassiveUnholyConduit"
-type "PassiveData"
-data "DisplayName" "h4f5b0f9dg4a59g4e90g8e63gb74b95213c24;1"
-data "Description" "h60a1ef02ga9ebg4278gbbbfgd4429b957c77;1"
-data "StatsFunctors" "SpellDamageIncrease(Necrotic, 10%)"
-data "Icon" "Mailem_DK_UnholyConduit" <!-- Placeholder Icon -->
-data "Properties" "Highlighted"
-data "StatsFunctorContext" "OnSpellCast"
 data "Conditions" "true"
 data "DescriptionParams" "" <!-- No additional parameters needed -->
 

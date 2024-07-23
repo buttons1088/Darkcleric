@@ -107,7 +107,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,9,0);ActionResource(SpellSlot,1,4)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveDarkLord"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CL_DarkFortitudeUnleashed"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/>
