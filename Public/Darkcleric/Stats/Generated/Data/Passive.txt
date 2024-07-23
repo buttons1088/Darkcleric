@@ -1,55 +1,56 @@
-<node id="CL_PassiveStrengthBoost">
-    <attribute id="Description" type="TranslatedString" handle="h85ea4598g376cg43ecg8cb3gfc5cbb530d1c;1"/>
-    <attribute id="DisplayName" type="TranslatedString" handle="hbb27c9b1g0d5bg4e2fg8088g8ad722028dc0;1"/>
-    <attribute id="StatsType" type="FixedString" value="Boost"/>
-    <attribute id="Boost" type="LSString" value="Attribute(Strength,2)"/>
-    <attribute id="StatusType" type="FixedString" value="PERSISTENT"/>
-    <attribute id="UUID" type="guid" value="your_unique_guid_here"/>
-</node>
+new entry "CL_PassiveStrengthBoost"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hbb27c9b1g0d5bg4e2fg8088g8ad722028dc0;1"
+data "Description" "h85ea4598g376cg43ecg8cb3gfc5cbb530d1c;1"
+data "Icon" "" <!-- Placeholder for the icon -->
+data "Boosts" "Attribute(Strength,2)"
+data "StackId" "CL_PASSIVE_STRENGTH_BOOST"
+data "StatusPropertyFlags" "" <!-- Come fill this in later -->
+data "StatusEffect" "" <!-- Optional: Come fill this in later -->
 
-new entry "CL_PassiveDarkResilience"
-type "PassiveData"
-data "DisplayName" "h30454733gf8cdg476fg9467g501020b678bf;1"
-data "Description" "ha7f78443geb1bg4657g981eg3c650ef8cd13;1"
-data "StatsFunctors" "Resistance(Necrotic)"
-data "Icon" "Mailem_DK_DarkResilience" <!-- Placeholder Icon -->
-data "Properties" "Highlighted"
-data "StatsFunctorContext" "OnDamageTaken"
-data "Conditions" "true" <!-- Applies to all situations where the character takes damage -->
-data "DescriptionParams" "" <!-- No additional parameters needed -->
 
-new entry "CL_PassiveShadowVeil"
+new entry "CL_PassiveDarkMending"
 type "PassiveData"
-data "DisplayName" "h2c05718egc274g45fagb9d7g4e923e61b79f;1"
-data "Description" "h32a5afe8g0862g4966ga808gaefa60f40d69;1"
-data "StatsFunctors" "Advantage(Stealth,DimLight)"
-data "Icon" "Mailem_DK_ShadowVeil" <!-- Placeholder Icon -->
+data "DisplayName" "h4ecba67ag3421g4f62g8519g9ce35330f0c9;1"
+data "Description" "h97d1fb8bga881g448egb247g21b106e60790;1"
+data "Icon" "PassiveFeature_DarkMending" <!-- Placeholder Icon -->
 data "Properties" "Highlighted"
-data "StatsFunctorContext" "OnStealthCheck"
-data "Conditions" "InDimLight()"
-data "DescriptionParams" "" <!-- No additional parameters needed -->
-
-new entry "CL_PassiveCorruptionAura"
-type "PassiveData"
-data "DisplayName" "h70b2f08eg8f74g454agb76dgf44e29c25c8d;1"
-data "Description" "h9945897egac42g4968gbcc8g88b2c549fa32;1"
-data "StatsFunctors" "AreaDamage(Necrotic, Radius, StartOfTurn)"
-data "Icon" "Mailem_DK_CorruptionAura" <!-- Placeholder Icon -->
-data "Properties" "Highlighted"
-data "StatsFunctorContext" "OnStartOfTurn"
-data "Conditions" "true"
-data "DescriptionParams" "Radius(3)" <!-- Example parameter -->
+data "StatsFunctorContext" "OnHeal"
+data "Conditions" "HealDoneGreaterThan(0) and IsSpell() and not IsCantrip()"
+data "StatsFunctors" "RegainHitPoints(1d6)"
 
 new entry "CL_PassiveSoulDrain"
-type "PassiveData"
-data "DisplayName" "h0679ec25g37abg493fg936fg4751c82e08b9;1"
-data "Description" "h5f654145gf500g4b14gbbe7g42ea2632c563;1"
-data "StatsFunctors" "HealOnSpellHit(5%)"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h4f845a8bg36edg474dg9731g4cabf1533303;1"
+data "Description" "h18823538gdb7fg4217ga57egc15249d414ab;1"
 data "Icon" "Mailem_DK_SoulDrain" <!-- Placeholder Icon -->
+data "Boosts" "HealOnSpellHit(5%)"
+data "StackId" "CL_PASSIVE_SOUL_DRAIN"
+data "StatusPropertyFlags" "" <!-- Come fill this in later -->
+data "StatusEffect" "" <!-- Optional: Come fill this in later -->
+
+new entry "CL_CorruptionAura"
+type "PassiveData"
+data "DisplayName" "h70b2f08eg8f74g454agb76dgf44e29c25c8d;1" <!-- Link to your name handle -->
+data "Description" "h9945897egac42g4968gbcc8g88b2c549fa32;1" <!-- Link to your description handle -->
+data "Icon" "Mailem_DK_CorruptionAura" <!-- Placeholder or custom icon -->
+data "StatsFunctorContext" "OnTurnStart" <!-- This ensures the effect is applied at the start of the turn -->
+data "Conditions" "IsAlive() and not IsHidden()" <!-- Ensure it only applies when the character is active -->
+data "StatsFunctors" "ApplyStatus(CL_CORRUPTION_AURA_DAMAGE,100,-1)" <!-- Applies the aura effect -->
+data "StatusGroups" "SG_RemoveOnRespec" <!-- Ensure the passive is removed upon respeccing -->
+data "StatusEffect" "" <!-- Optional: Come fill this in later -->
+
+new entry "CL_SoulDrain"
+type "PassiveData"
+data "DisplayName" "h4f845a8bg36edg474dg9731g4cabf1533303;1"
+data "Description" "h18823538gdb7fg4217ga57egc15249d414ab;1"
+data "Icon" "Icon_SoulDrain"  <!-- Placeholder Icon -->
 data "Properties" "Highlighted"
-data "StatsFunctorContext" "OnSpellHit"
-data "Conditions" "true"
-data "DescriptionParams" "" <!-- No additional parameters needed -->
+data "StatsFunctorContext" "OnDamage"  <!-- Triggered when dealing damage -->
+data "Conditions" "DamageDoneGreaterThan(0) and IsSpell()"
+data "StatsFunctors" "RegainHitPoints(0.05 * DamageDone); ApplyStatus(PASSIVE_SOUL_DRAIN,100,0)"    <!-- Work out where to define PASSIVE_SOUL_DRAIN  -->
 
 new entry "CL_PassiveDarkResilienceImproved"
 type "PassiveData"

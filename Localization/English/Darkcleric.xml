@@ -5,14 +5,26 @@
 	<content contentuid="hde67aa1egb925g4377ga700ga40eb78b22f2" version="1">Dark Power</content>
 	<content contentuid="hff232a77g3c53g4b26g8f48g37d355e09e00" version="1">This resource represents the dark power you wield, growing stronger as you embrace the shadows.</content>
 	
-    <content contentuid="h30454733gf8cdg476fg9467g501020b678bf" version="1">Dark Resilience</content>
-    <content contentuid="ha7f78443geb1bg4657g981eg3c650ef8cd13" version="1">You gain resistance to necrotic damage, making you more resilient against dark energies.</content>
-    <content contentuid="h2c05718egc274g45fagb9d7g4e923e61b79f" version="1">Shadow Veil</content>
-    <content contentuid="h32a5afe8g0862g4966ga808gaefa60f40d69" version="1">You gain advantage on Stealth checks when in dim light, allowing you to blend into the shadows more effectively.</content>
-    <content contentuid="h70b2f08eg8f74g454agb76dgf44e29c25c8d" version="1">Corruption Aura</content>
-    <content contentuid="h9945897egac42g4968gbcc8g88b2c549fa32" version="1">You emit an aura of necrotic energy that deals damage to enemies within a radius at the start of their turn.</content>
+  
+    <content contentuid="h4ecba67ag3421g4f62g8519g9ce35330f0c9" version="1">Dark Mending</content>
+    <content contentuid="h97d1fb8bga881g448egb247g21b106e60790" version="1">Whenever you cast a spell that restores HP, you regain additional HP equal to 1d6.</content>
+    <content contentuid="h4f845a8bg36edg474dg9731g4cabf1533303" version="1">Soul Drain</content>
+    <content contentuid="h18823538gdb7fg4217ga57egc15249d414ab" version="1">When you hit a creature with a spell, you regain 5% of the spell’s damage as health.</content>
     <content contentuid="h0679ec25g37abg493fg936fg4751c82e08b9" version="1">Soul Drain</content>
     <content contentuid="h5f654145gf500g4b14gbbe7g42ea2632c563" version="1">When you hit with a spell, you heal for a percentage of the damage dealt, siphoning life from your enemies.</content>
+    <content contentuid="h39fa7e22g7dc5g40ceg833ag8b8d867580ad" version="1">Dark Lord</content>
+    <content contentuid="hfc329b71g28f7g4015g9713g07c1489504ee" version="1">A powerful passive that grants significant bonuses at level 8.</content>
+    <content contentuid="h31ee32a3gab1cg40edg9ce5g0dcc53fb5dae" version="1">Dark Shadow</content>
+    <content contentuid="hba537125g014dg463ag881cga70de17b9bb4" version="1">A shadowy ability that provides additional benefits at level 10.</content>
+    <content contentuid="h057b4bc0g2915g46begb60fge656943d37b4" version="1">Darkness Domain</content>
+    <content contentuid="hfade1126g5e04g426eg96e4ge1fa9a8b1c4b" version="1">A domain-based ability that activates at level 11.</content>
+    <content contentuid="h057b4bc0g2915g46begb60fge656943d37b4" version="1">Darkness Domain</content>
+    <content contentuid="hfade1126g5e04g426eg96e4ge1fa9a8b1c4b" version="1">A domain-based ability that activates at level 11.</content>
+    <content contentuid="h13a05b24g1832g4dcfg8666g3a8cbef73ce5" version="1">Dark Eclipse</content>
+    <content contentuid="ha7d04e89g9309g437agae51gd0b22a5d8134" version="1">An eclipse-based passive that becomes available at level 12.</content>
+
+    <content contentuid="h2c05718egc274g45fagb9d7g4e923e61b79f" version="1">Shadow Veil</content>
+    <content contentuid="h32a5afe8g0862g4966ga808gaefa60f40d69" version="1">You gain advantage on Stealth checks when in dim light, allowing you to blend into the shadows more effectively.</content>
     <content contentuid="h97bb074ag00ecg49a1gb23eg362f034eb99d" version="1">Dark Resilience (Improved)</content>
     <content contentuid="h6456e957g70adg4060g95cfg85c22a08e3e8" version="1">Your resistance to necrotic damage is enhanced, and you gain immunity to the frightened condition.</content>
     <content contentuid="h4f5b0f9dg4a59g4e90g8e63gb74b95213c24" version="1">Unholy Conduit</content>
@@ -21,6 +33,8 @@
     <content contentuid="h8f200d8dg661dg442dg99d6g221f1bc1389d" version="1">You create an area of supernatural darkness that obscures vision, shrouding the battlefield in a veil of shadows.</content>
     <content contentuid="h85ea4598g376cg43ecg8cb3gfc5cbb530d1c" version="1">Permanent +2 Strength</content>
     <content contentuid="hbb27c9b1g0d5bg4e2fg8088g8ad722028dc0" version="1">Strength of the Dark Cleric</content>
+    <content contentuid="h70b2f08eg8f74g454agb76dgf44e29c25c8d" version="1">Corruption Aura</content>
+    <content contentuid="h9945897egac42g4968gbcc8g88b2c549fa32" version="1">You emit an aura of necrotic energy that deals damage to enemies within a radius at the start of their turn.</content>
 
 
     <content contentuid="ha31f5c01ge78ag455bg94e2gdf93bbf95cf7" version="1">Necrotic Bolt</content>
@@ -40,10 +54,16 @@
     <content contentuid="h2de7fdaeg3222g4068gaef0g5a393f337c08" version="1">Necrotic Surge</content>
     <content contentuid="h72552de1g6b17g497eg8a13g1efdc444f178" version="1">Unleash a surge of necrotic energy that deals substantial damage and drains the target’s life force, weakening them and restoring some vitality to you.</content>
 
-    <content contentuid="h0fe49f4cge1e3g4d8fg979bgda3d0dc344be" version="1"> Necrotic Wound</content>
+    <content contentuid="h00e1642bgeb6dg4224ga42bg8959a2420ad0" version="1">Dark Fortitude</content>
+    <content contentuid="hba443666gedd2g4cb0g8c35g76aa421e2e3a" version="1">Grants 3 additional maximum HP.</content> 
+    <content contentuid="h30454733gf8cdg476fg9467g501020b678bf" version="1">Dark Resilience</content>
+    <content contentuid="ha7f78443geb1bg4657g981eg3c650ef8cd13" version="1">You gain resistance to necrotic damage, making you more resilient against dark energies.</content>
+    <content contentuid="h0fe49f4cge1e3g4d8fg979bgda3d0dc344be" version="1">Necrotic Wound</content>
     <content contentuid="hcf626bdbg59a8g4896ga622geaff55da0280" version="1">This wound festers with necrotic energy, dealing damage over time.</content>
-    
-    
+    <content contentuid="h2771584cgc10dg4cc2gb1eag488f5dab91fa" version="1">Heal on Spell Hit</content>
+    <content contentuid="h83be56abg2b9fg4d92gbe3dg3dc221d981cf" version="1">You heal for 5% of the damage dealt when you hit a target with a spell.</content>
+
+
     <content contentuid="" version="1"></content>
     <content contentuid="" version="1"></content>
     <content contentuid="" version="1"></content>

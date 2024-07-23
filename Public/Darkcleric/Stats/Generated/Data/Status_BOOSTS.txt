@@ -1,0 +1,53 @@
+new entry "CL_DarkResilience_Necrotic"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h30454733gf8cdg476fg9467g501020b678bf;1"
+data "Description" "ha7f78443geb1bg4657g981eg3c650ef8cd13;1"
+data "Icon" "Mailem_DK_DarkResilience"  <!-- Placeholder Icon -->
+data "StackId" "CL_DARKRESILIENCE"
+data "Boosts" "Resistance(Necrotic,Resistant)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+new entry "CL_DarkFortitude_IncreaseHP"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h00e1642bgeb6dg4224ga42bg8959a2420ad0;1" <!-- Handle for DisplayName -->
+data "Description" "hba443666gedd2g4cb0g8c35g76aa421e2e3a;1" <!-- Handle for Description -->
+data "Icon" "Mailem_DK_DarkFortitude" <!-- Placeholder Icon -->
+data "StackId" "CL_DARKFORTITUDE"
+data "Boosts" "IncreaseMaxHP(3)" <!-- Adjust the value as needed -->
+data "StatusGroups" "SG_RemoveOnRespec"
+
+new entry "CL_ShadowVeil_StealthCheck"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h2c05718egc274g45fagb9d7g4e923e61b79f;1"
+data "Description" "h32a5afe8g0862g4966ga808gaefa60f40d69;1"
+data "Icon" "Mailem_DK_ShadowVeil"  <!-- Placeholder Icon -->
+data "StackId" "CL_SHADOWVEIL"
+data "StackPriority" "0"
+data "Boosts" "Skill(Stealth, Advantage, DimLight)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusEffect" "5c9cf7f9-1d85-4bc4-a4f1-1496463aace3"
+
+
+new entry "CL_CORRUPTION_AURA_DAMAGE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "SPIRIT_GUARDIANS_NECROTIC_AURA" <!-- Reuse the base game aura effect -->
+data "DescriptionParams" "DealDamage(3d8,Necrotic)" <!-- Adjusted for your needs -->
+data "AuraStatuses" "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(CL_CORRUPTION_AURA_DAMAGE_EFFECT,100,-1)" <!-- Applies a new custom damage effect -->
+data "TooltipDamage" "DealDamage(3d8,Necrotic)" <!-- Tooltip damage value -->
+data "StatusEffect" "c07a2ba4-6b35-41e4-8d45-23ed8cd9901d"
+
+new entry "CL_CORRUPTION_AURA_DAMAGE_EFFECT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "SPIRIT_GUARDIANS_NECROTIC_4" <!-- Reuse the base game damage effect as a template -->
+data "DescriptionParams" "DealDamage(3d8,Necrotic)" <!-- Adjusted for your needs -->
+data "TooltipDamage" "DealDamage(3d8,Necrotic)" <!-- Tooltip damage value -->
+data "OnApplySuccess" "IF(not HasStatus('CORRUPTION_AURA_DAMAGE_RECEIVED')):DealDamage(3d8,Necrotic,Magical);ApplyStatus(CORRUPTION_AURA_DAMAGE_RECEIVED,100,1)"
+data "OnApplyFail" "IF(not HasStatus('CORRUPTION_AURA_DAMAGE_RECEIVED')):DealDamage(3d8/2,Necrotic,Magical);ApplyStatus(CORRUPTION_AURA_DAMAGE_RECEIVED,100,1)"
+data "OnTickSuccess" "IF(not HasStatus('CORRUPTION_AURA_DAMAGE_RECEIVED')):DealDamage(3d8,Necrotic,Magical);ApplyStatus(CORRUPTION_AURA_DAMAGE_RECEIVED,100,1)"
+data "OnTickFail" "IF(not HasStatus('CORRUPTION_AURA_DAMAGE_RECEIVED')):DealDamage(3d8/2,Necrotic,Magical);ApplyStatus(CORRUPTION_AURA_DAMAGE_RECEIVED,100,1)"
+data "StatusEffect" "c07a2ba4-6b35-41e4-8d45-23ed8cd9901d"
