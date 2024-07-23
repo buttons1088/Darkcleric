@@ -73,17 +73,6 @@ data "StatsFunctorContext" "OnDamage"  <!-- Triggered when dealing damage -->
 data "Conditions" "DamageDoneGreaterThan(0) and IsSpell()"
 data "StatsFunctors" "RegainHitPoints(0.05 * DamageDone); ApplyStatus(PASSIVE_SOUL_DRAIN,100,0)"    <!-- Work out where to define PASSIVE_SOUL_DRAIN  -->
 
-new entry "CL_PassiveDarkResilienceImproved"
-type "PassiveData"
-data "DisplayName" "h97bb074ag00ecg49a1gb23eg362f034eb99d;1"
-data "Description" "h6456e957g70adg4060g95cfg85c22a08e3e8;1"
-data "StatsFunctors" "Resistance(Necrotic);Immunity(Frightened)"
-data "Icon" "Mailem_DK_DarkResilienceImproved" <!-- Placeholder Icon -->
-data "Properties" "Highlighted"
-data "StatsFunctorContext" "OnDamageTaken"
-data "Conditions" "true"
-data "DescriptionParams" "" <!-- No additional parameters needed -->
-
 new entry "CL_PassiveExternalDarkness"
 type "PassiveData"
 data "DisplayName" "he0a953fcgd1feg45c8g9431g134fc75c9012;1"

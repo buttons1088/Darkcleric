@@ -7,7 +7,7 @@
                 <!-- Level 1 -->
                 <node id="Progression"> Mainclass Level 1
                     <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value="CL_PassiveDarkResilience;ActionResource(DarkPower,2,0);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Morningstars);Proficiency(Flails)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,2,0);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Morningstars);Proficiency(Flails)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1"/>
@@ -21,7 +21,7 @@
                 <!-- Level 2 -->
                 <node id="Progression"> Mainclass Level 2
                     <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value="CL_PassiveDarkFortitude_IncreaseHP;ActionResource(DarkPower,3,0);ProficiencyBonus(SavingThrow,Wisdom);SelectSpells(SPELL_LIST_UUID,5,1)"/>
+                    <attribute id="Boosts" type="LSString" value="CL_DarkResilience_Necrotic;ActionResource(DarkPower,3,0);ProficiencyBonus(SavingThrow,Wisdom);SelectSpells(SPELL_LIST_UUID,5,1)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
                     <attribute id="PassivesAdded" type="LSString" value=""/>
@@ -35,10 +35,10 @@
                 <!-- Level 3 -->
                 <node id="Progression"> Mainclass Level 3
                     <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,4,0);ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2)"/>
+                    <attribute id="Boosts" type="LSString" value="CL_PassiveDarkFortitude_IncreaseHP;ActionResource(DarkPower,4,0);ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveDarkMending;UnlockedSpellSlotLevel2"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(DARK_CLERIC_SPELL_GUIDD"/>
@@ -52,7 +52,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,5,0);SelectSpells(SPELL_LIST_UUID,8,1)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveSoulDrain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveDarkMending"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,3);SelectSkills(SKILL_LIST_UUID,4);SelectSpells(SPELL_LIST_UUID,8,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,9,0)"/>
@@ -63,10 +63,10 @@
                 <!-- Level 5 -->
                 <node id="Progression"> Mainclass Level 5
                     <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value="CL_PassiveShadowVeil_StealthCheck;ActionResource(DarkPower,6,0);SelectSpells(SPELL_LIST_UUID,10,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,6,0);SelectSpells(SPELL_LIST_UUID,10,1)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveSoulDrain"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectPassives(PASSIVE_LIST_UUID,3);SelectSkills(SKILL_LIST_UUID,5);SelectSpells(SPELL_LIST_UUID,9,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,10,0)"/>
@@ -77,10 +77,10 @@
                 <!-- Level 6 -->
                 <node id="Progression"> Mainclass Level 6
                     <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,7,0);ActionResource(SpellSlot,1,3)"/>
+                    <attribute id="Boosts" type="LSString" value="CL_PassiveShadowVeil_StealthCheck;ActionResource(DarkPower,7,0);ActionResource(SpellSlot,1,3)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CL_CorruptionAura"/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/>
@@ -93,7 +93,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,8,0);ActionResource(SpellSlot,1,4)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveUnholyConduit"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CL_CorruptionAura"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(DARK_CLERIC_SPELL_GUIDD"/>
@@ -107,7 +107,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,9,0);ActionResource(SpellSlot,1,4)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CL_DarkFortitudeUnleashed"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveUnholyConduit"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80"/>
@@ -120,7 +120,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,10,0);ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5);Proficiency(HeavyArmor);Proficiency(Longswords)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveStrengthBoost"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CL_DarkFortitudeUnleashed"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(DARK_CLERIC_SPELL_GUIDD"/>
@@ -134,7 +134,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,11,0);ActionResource(SpellSlot,1,5))"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="CL_PassiveStrengthBoost"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(DARK_CLERIC_SPELL_GUIDD"/>
