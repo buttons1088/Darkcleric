@@ -7,7 +7,7 @@
                 <!-- Level 1 -->
                 <node id="Progression"> Mainclass Level 1
                     <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,2,0);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Morningstars);Proficiency(Flails)"/>
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Morningstars);Proficiency(Flails);ActionResource(DarkPower,2,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1"/>
