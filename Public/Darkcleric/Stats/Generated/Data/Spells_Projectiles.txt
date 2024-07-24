@@ -5,7 +5,8 @@ data "Level" "6"
 data "Icon" "Spell_Necromancy_Blight"
 data "DisplayName" "h2de7fdaeg3222g4068gaef0g5a393f337c08"
 data "Description" "h72552de1g6b17g497eg8a13g1efdc444f178"
-data "SpellRoll" "ActionPoint:1;SpellSlotsGroup:1:1:6"
+data "UseCost" "ActionPoints:1;SpellSlotsGroup:1:1:6;DarkPower:2"  <!-- Updated DarkPower cost -->
+data "SpellRoll" "Attack(AttackType.RangedSpellAttack)"
 data "SuccessEffects" "IF(not Tagged('PLANT')):DealDamage(8d8,Necrotic);IF(Tagged('PLANT')):DealDamage(64,Necrotic,Magical);ApplyStatus(LIFE_DRAIN,100,4)"
 data "CastSound" "Spell_Cast_Damage_Necrotic_Blight_L1to3"
 data "AnimationTemplate" "Target_Blight"
@@ -18,9 +19,9 @@ data "TooltipDamageList" "DealDamage(8d8,Necrotic);DealDamage(64,Necrotic,Magica
 data "TooltipOnMiss" "Spell missed the target, no effect applied."
 data "TooltipUpcastDescription" "Increases damage by 1d8 for each spell level above 6."
 data "TooltipUpcastDescriptionParams" "DealDamage(1d8,Necrotic)"
-data "PrepareEffect" "spell_prepare_necrotic_surge_effect"
-data "CastEffect" "spell_cast_necrotic_surge_effect"
-data "TargetEffect" "spell_target_necrotic_surge_effect"
+data "PrepareEffect" "spell_prepare_necrotic_surge_effect"    COME BACK TO DEFINE THESE
+data "CastEffect" "spell_cast_necrotic_surge_effect"     COME BACK TO DEFINE THESE
+data "TargetEffect" "spell_target_necrotic_surge_effect" COME BACK TO DEFINE THESE
 data "DamageType" "Necrotic"
 data "SpellSoundMagnitude" "Big"
 data "SpellFlags" "Targeted;Damage;Debuff"
@@ -34,7 +35,7 @@ data "Icon" "Spell_Necromancy_ChillTouch"
 data "DisplayName" "ha31f5c01ge78ag455bg94e2gdf93bbf95cf7"
 data "Description" "h7186307dga49dg4319gb4efg4734b6661ffe"
 data "SpellRoll" "Attack(AttackType.RangedSpellAttack)"
-data "UseCost" "SpellSlotsGroup:1:1:1;ActionPoints:1"
+data "UseCost" "ActionPoints:1;DarkPower:1"
 data "SpellProperties" "GROUND:DealDamage(Necrotic, 2d6);ApplyStatus(CL_STATUS_NECROTIC_WOUND, 100, 2)"
 data "SpellSuccess" "DealDamage(Necrotic, 2d6);ApplyStatus(CL_STATUS_NECROTIC_WOUND, 100, 2)"
 data "TargetConditions" "not Self() and Character()"
@@ -42,17 +43,16 @@ data "TooltipDamageList" "DealDamage(Necrotic, 2d6)"
 data "TooltipOnMiss" "Missed!"
 data "TooltipUpcastDescription" "Increased damage at higher levels."
 data "TooltipUpcastDescriptionParams" "DealDamage(1d6, Necrotic)"
-data "CastSound" "Spell_Cast_Damage_Necrotic_ChillTouch_L1to3"   // Verify sound file
-data "TargetSound" "Spell_Cast_Damage_Necrotic_ChillTouch_L1to3" // Verify sound file
+data "CastSound" "Spell_Cast_Damage_Necrotic_ChillTouch_L1to3"
+data "TargetSound" "Spell_Cast_Damage_Necrotic_ChillTouch_L1to3"
 data "HitCosts" "SpellSlotsGroup:1:1:1"
 data "AnimationTemplate" "CL_Target_ChillTouch"
 data "VerbalIntent" "Damage"
 data "SpellStyleGroup" "Class"
 data "SpellFlags" "IsRanged;IsHarmful"
-data "PrepareEffect" "PrepareNecroticBoltEffect"
-data "CastEffect" "CastNecroticBoltEffect"
-data "TargetEffect" "TargetNecroticBoltEffect"
+data "PrepareEffect" "PrepareNecroticBoltEffect"   COME BACK TO DEFINE THESE
+data "CastEffect" "CastNecroticBoltEffect"        COME BACK TO DEFINE THESE
+data "TargetEffect" "TargetNecroticBoltEffect"  COME BACK TO DEFINE THESE
 data "DamageType" "Necrotic"
 data "SpellSoundMagnitude" "Medium"
 data "TooltipStatusApply" "ApplyStatus(CL_STATUS_NECROTIC_WOUND, 100, 2)"
-

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="ProgressionDescriptions">
+    <node id="root">
+      <children>
+        <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h4a6d0b32g11aag4f27g8e8egbca21329111e" version="1" /> UUID for class Description
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc4dcbcc7g1f83g4331gac92g14f5a4896e7d" version="1" /> UUID for Subclass Name
+                    <attribute id="Type" type="FixedString" value="Darkcleric" />
+                    <attribute id="ProgressionTableId" type="guid" value="c86c0430-f234-45c9-90e0-18810591fa80" />
+                    <attribute id="UUID" type="guid" value="026dadf7-68a0-4a30-9d81-fb2af478c6fa" /> New UUID, Not sure for what
+                </node>
+      </children>
+    </node>
+  </region>
+</save>

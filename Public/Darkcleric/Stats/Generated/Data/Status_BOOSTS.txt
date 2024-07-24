@@ -98,3 +98,13 @@ data "TooltipDamage" "IncreaseSpellDamage(2d8,Necrotic)" <!-- Tooltip damage val
 data "OnApplySuccess" "IncreaseDamage(2d8,Necrotic)" <!-- Increases necrotic damage on success -->
 data "OnApplyFail" "IncreaseDamage(1d8,Necrotic)" <!-- Increases necrotic damage on failure -->
 data "StatusEffect" ""
+
+new entry "CL_UnholyBlessing_Boost"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hfeba95c8g390ag482cgaa75g13bb0f98fb12"
+data "Description" "hc5ac3e9egd98dg40d9gbdf2gdd01ba21f939"
+data "Icon" "Icon_UnholyBlessing"  <!-- Placeholder Icon -->
+data "StackId" "CL_UNHOLYBLESSING_BOOST"
+data "Boosts" "Resistance(Necrotic,10%)"
+data "CooldownType" "OncePerShortRest"

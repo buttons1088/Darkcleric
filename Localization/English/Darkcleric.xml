@@ -20,6 +20,9 @@
     <content contentuid="ha7f78443geb1bg4657g981eg3c650ef8cd13" version="1">You emit an aura of necrotic energy that deals 3d8 necrotic damage to enemies within a radius at the start of their turn.</content>
     <content contentuid="h4f5b0f9dg4a59g4e90g8e63gb74b95213c24" version="1">Unholy Conduit</content>
     <content contentuid="h60a1ef02ga9ebg4278gbbbfgd4429b957c77" version="1">Your spells that deal necrotic damage are increased in potency, dealing an additional 2d8 necrotic damage to your foes.</content>
+    <content contentuid="hfeba95c8g390ag482cgaa75g13bb0f98fb12" version="1">Unholy Blessing Boost</content>
+    <content contentuid="hc5ac3e9egd98dg40d9gbdf2gdd01ba21f939" version="1">Imbues the target with a dark blessing that enhances their resistance to necrotic damage by 10%. This boost lasts for 10 turns and is refreshed after each Short Rest.</content>
+
 
     <!-- Passives -->
     <content contentuid="h4ecba67ag3421g4f62g8519g9ce35330f0c9" version="1">Dark Mending</content>
