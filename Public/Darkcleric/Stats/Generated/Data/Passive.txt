@@ -1,15 +1,3 @@
-new entry "CL_PassiveStrengthBoost"
-type "StatusData"
-data "StatusType" "BOOST"
-data "DisplayName" "hbb27c9b1g0d5bg4e2fg8088g8ad722028dc0;1"
-data "Description" "h85ea4598g376cg43ecg8cb3gfc5cbb530d1c;1"
-data "Icon" "" <!-- Placeholder for the icon -->
-data "Boosts" "Attribute(Strength,2)"
-data "StackId" "CL_PASSIVE_STRENGTH_BOOST"
-data "StatusPropertyFlags" "" <!-- Come fill this in later -->
-data "StatusEffect" "" <!-- Optional: Come fill this in later -->
-
-
 new entry "CL_PassiveDarkMending"
 type "PassiveData"
 data "DisplayName" "h4ecba67ag3421g4f62g8519g9ce35330f0c9;1"
@@ -17,30 +5,31 @@ data "Description" "h97d1fb8bga881g448egb247g21b106e60790;1"
 data "Icon" "PassiveFeature_DarkMending" <!-- Placeholder Icon -->
 data "Properties" "Highlighted"
 data "StatsFunctorContext" "OnHeal"
-data "Conditions" "HealDoneGreaterThan(0) and IsSpell() and not IsCantrip()"
+data "Conditions" "IsSpell() and VerbalIntent('Healing')"
 data "StatsFunctors" "RegainHitPoints(1d6)"
 
 new entry "CL_PassiveSoulDrain"
-type "StatusData"
-data "StatusType" "BOOST"
+type "PassiveData"
 data "DisplayName" "h4f845a8bg36edg474dg9731g4cabf1533303;1"
 data "Description" "h18823538gdb7fg4217ga57egc15249d414ab;1"
 data "Icon" "Mailem_DK_SoulDrain" <!-- Placeholder Icon -->
-data "Boosts" "HealOnSpellHit(5%)"
-data "StackId" "CL_PASSIVE_SOUL_DRAIN"
-data "StatusPropertyFlags" "" <!-- Come fill this in later -->
-data "StatusEffect" "" <!-- Optional: Come fill this in later -->
+data "StatsFunctorContext" "OnDamage" <!-- Triggered when dealing damage -->
+data "Conditions" "DamageType(Necrotic) and DamageDoneGreaterThan(0)" <!-- Applies only to necrotic damage -->
+data "Boosts" "RegainHitPoints(SELF,0.05 * DamageDone)" <!-- 5% of damage done is regained as hitpoints -->
+data "Properties" "DisplayBoostInTooltip" <!-- Ensure it shows up in the tooltip -->
+data "StatusEffect" "" <!-- Optional: leave empty if not applicable -->
+
 
 new entry "CL_CorruptionAura"
 type "PassiveData"
-data "DisplayName" "h70b2f08eg8f74g454agb76dgf44e29c25c8d;1" <!-- Link to your name handle -->
-data "Description" "h9945897egac42g4968gbcc8g88b2c549fa32;1" <!-- Link to your description handle -->
+data "DisplayName" "h70b2f08eg8f74g454agb76dgf44e29c25c8d;1" <!-- Handle for DisplayName -->
+data "Description" "h9945897egac42g4968gbcc8g88b2c549fa32;1" <!-- Handle for Description -->
 data "Icon" "Mailem_DK_CorruptionAura" <!-- Placeholder or custom icon -->
-data "StatsFunctorContext" "OnTurnStart" <!-- This ensures the effect is applied at the start of the turn -->
-data "Conditions" "IsAlive() and not IsHidden()" <!-- Ensure it only applies when the character is active -->
+data "StatsFunctorContext" "OnTurnStart" <!-- Applies at the start of the turn -->
+data "Conditions" "IsAlive() and not IsHidden()" <!-- Applies only when the character is active -->
 data "StatsFunctors" "ApplyStatus(CL_CORRUPTION_AURA_DAMAGE,100,-1)" <!-- Applies the aura effect -->
-data "StatusGroups" "SG_RemoveOnRespec" <!-- Ensure the passive is removed upon respeccing -->
-data "StatusEffect" "" <!-- Optional: Come fill this in later -->
+data "StatusGroups" "SG_RemoveOnRespec" <!-- Removed upon respeccing -->
+data "StatusEffect" "" <!-- Optional: Define if you have a specific effect or animation -->
 
 new entry "CL_PassiveUnholyConduit"
 type "PassiveData"
@@ -52,37 +41,6 @@ data "Conditions" "HasStatus(UnholyConduitActive)" <!-- Applies if the condition
 data "StatsFunctors" "ApplyStatus(CL_UNHOLY_CONDUIT_BOOST,100,-1)" <!-- Applies a new boost effect -->
 data "StatusGroups" "SG_RemoveOnRespec" <!-- Ensure the passive is removed upon respeccing -->
 data "StatusEffect" "" <!-- Optional: You might want to define a specific status effect for visuals -->
-
-new entry "CL_DarkFortitudeUnleashed"
-type "StatusData"
-data "StatusType" "BOOST"
-data "DisplayName" "h45dd1f16ge693g4453g87f8gbdde4fd73ff3;1" <!-- Handle for DisplayName -->
-data "Description" "hac6cd796gcb3bg4af1g8714g63f0c6483bd3;1" <!-- Handle for Description -->
-data "Icon" "Mailem_DK_DarkFortitude" <!-- Placeholder Icon -->
-data "StackId" "CL_DARKFORTITUDE"
-data "Boosts" "IncreaseMaxHP(2)" <!-- New HP increase value -->
-data "StatusGroups" "SG_RemoveOnRespec"
-
-new entry "CL_SoulDrain"
-type "PassiveData"
-data "DisplayName" "h4f845a8bg36edg474dg9731g4cabf1533303;1"
-data "Description" "h18823538gdb7fg4217ga57egc15249d414ab;1"
-data "Icon" "Icon_SoulDrain"  <!-- Placeholder Icon -->
-data "Properties" "Highlighted"
-data "StatsFunctorContext" "OnDamage"  <!-- Triggered when dealing damage -->
-data "Conditions" "DamageDoneGreaterThan(0) and IsSpell()"
-data "StatsFunctors" "RegainHitPoints(0.05 * DamageDone); ApplyStatus(PASSIVE_SOUL_DRAIN,100,0)"    <!-- Work out where to define PASSIVE_SOUL_DRAIN  -->
-
-new entry "CL_PassiveExternalDarkness"
-type "PassiveData"
-data "DisplayName" "he0a953fcgd1feg45c8g9431g134fc75c9012;1"
-data "Description" "h8f200d8dg661dg442dg99d6g221f1bc1389d;1"
-data "StatsFunctors" "CreateArea(Darkness, Radius)"
-data "Icon" "Mailem_DK_ExternalDarkness" <!-- Placeholder Icon -->
-data "Properties" "Highlighted"
-data "StatsFunctorContext" "OnAbilityUse"
-data "Conditions" "true"
-data "DescriptionParams" "Radius(5)" <!-- Example parameter -->
 
 
 // Check Modifiers for additional things for what you can do with Passives //

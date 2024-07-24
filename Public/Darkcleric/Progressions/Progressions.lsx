@@ -35,7 +35,7 @@
                 <!-- Level 3 -->
                 <node id="Progression"> Mainclass Level 3
                     <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value="CL_PassiveDarkFortitude_IncreaseHP;ActionResource(DarkPower,4,0);ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2)"/>
+                    <attribute id="Boosts" type="LSString" value="CL_DarkFortitude_IncreaseHP;ActionResource(DarkPower,4,0);ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2"/>
@@ -117,10 +117,10 @@
                 <!-- Level 9 -->
                 <node id="Progression"> Mainclass Level 9
                     <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DarkPower,10,0);ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5);Proficiency(HeavyArmor);Proficiency(Longswords)"/>
+                    <attribute id="Boosts" type="LSString" value="CL_DarkFortitudeUnleashed;ActionResource(DarkPower,10,0);ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5);Proficiency(HeavyArmor);Proficiency(Longswords)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="Darkcleric"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CL_DarkFortitudeUnleashed"/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(DARK_CLERIC_SPELL_GUIDD"/>
