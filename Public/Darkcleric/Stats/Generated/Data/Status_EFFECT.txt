@@ -10,12 +10,3 @@ data "StatusEffect" "ccd41395-27d3-43bf-9ed8-dceb54f8c5c5"  // Unique UUID for t
 data "IsPermanent" "False"  // Status is not permanent
 data "Duration" "2"  // Duration in turns
 data "Stackable" "False"  // Status is not stackable
-
-new entry "CORRUPTION_AURA_DAMAGE_RECEIVED"
-type "StatusData"
-data "StatusType" "EFFECT"
-data "DisplayName" "h8bea2123g24e9g4956gb2d7g5ed1562dd2d6;1" <!-- Name handle for display name -->
-data "Description" "ha4b8c109gf22bg4f25gadaegcfe5d47e7d72;1" <!-- Description handle -->
-data "Icon" "Icon_CorruptionAuraDamageReceived" <!-- Placeholder or custom icon -->
-data "StatusPropertyFlags" "DisableCombatlog" <!-- Optional: Adjust properties as needed -->
-data "StatusEffect" "7772dab3-fed2-40d3-90b9-93d30c49ef5f" <!-- Unique GUID -->

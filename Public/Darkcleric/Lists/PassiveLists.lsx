@@ -4,14 +4,32 @@
     <region id="PassiveLists">
         <node id="root">
             <children>
+                <!-- Category 1: Base Passives -->
                 <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="CL_PassiveDarkResilience,CL_PassiveShadowVeil,CL_PassiveCorruptionAura,CL_PassiveSoulDrain"/> 
-                    <attribute id="UUID" type="guid" value="b39950d6-05ad-4eda-b142-b660303b2156"/> 
+                    <attribute id="Passives" type="LSString" value="CL_PassiveDarkResilience,CL_PassiveShadowVeil,CL_PassiveCorruptionAura,CL_PassiveSoulDrain"/>
+                    <attribute id="UUID" type="guid" value="b39950d6-05ad-4eda-b142-b660303b2156"/>
                 </node>
+                
+                <!-- Category 2: Improved Passives -->
                 <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="CL_PassiveDarkResilienceImproved,CL_PassiveUnholyConduit,CL_PassiveExternalDarkness"/> 
-                    <attribute id="UUID" type="guid" value="3f7bde34-a616-4f3b-89e7-41021704b665"/> 
+                    <attribute id="Passives" type="LSString" value="CL_PassiveDarkResilienceImproved,CL_PassiveUnholyConduit,CL_PassiveExternalDarkness"/>
+                    <attribute id="UUID" type="guid" value="3f7bde34-a616-4f3b-89e7-41021704b665"/>
                 </node>
+                
+                <!-- Category 3: New Passives -->
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="CL_NewPassive1,CL_NewPassive2,CL_NewPassive3"/> <!-- Add your new passives here -->
+                    <attribute id="UUID" type="guid" value=""/> <!-- Assign a unique UUID -->
+                </node>
+                
+                <!-- Category 4: Special Abilities -->
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="CL_SpecialAbility1,CL_SpecialAbility2"/> <!-- Add any special abilities -->
+                    <attribute id="UUID" type="guid" value=""/> <!-- Assign a unique UUID -->
+                </node>
+                
+                <!-- Continue with additional categories as needed -->
+                
             </children>
         </node>
     </region>

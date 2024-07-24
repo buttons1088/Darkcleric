@@ -77,6 +77,18 @@ data "OnTickSuccess" "IF(not HasStatus('CORRUPTION_AURA_DAMAGE_RECEIVED')):DealD
 data "OnTickFail" "IF(not HasStatus('CORRUPTION_AURA_DAMAGE_RECEIVED')):DealDamage(3d8/2,Necrotic,Magical);ApplyStatus(CORRUPTION_AURA_DAMAGE_RECEIVED,100,1)"
 data "StatusEffect" "" <!-- Reuse base game effect or specify a new one -->
 
+new entry "CORRUPTION_AURA_DAMAGE_RECEIVED"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h8bea2123g24e9g4956gb2d7g5ed1562dd2d6;1" <!-- Handle for DisplayName -->
+data "Description" "ha4b8c109gf22bg4f25gadaegcfe5d47e7d72;1" <!-- Handle for Description -->
+data "Icon" "Icon_CorruptionAuraDamageReceived" <!-- Placeholder Icon -->
+data "StackId" "CL_CORRUPTIONAURA" <!-- Unique stack ID for this effect -->
+data "StatusGroups" "SG_RemoveOnRespec" <!-- Optional: Adjust status groups as needed -->
+data "StatusPropertyFlags" "DisableCombatlog" <!-- Optional: Adjust properties as needed -->
+data "StatusEffect" "" <!-- Unique GUID for the status effect -->
+data "AuraStatuses" "OnStatusApplied" <!-- Apply damage when status is applied -->
+
 
 new entry "CL_UNHOLY_CONDUIT_BOOST"
 type "StatusData"
