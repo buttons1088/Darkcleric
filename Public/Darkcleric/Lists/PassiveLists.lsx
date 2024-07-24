@@ -19,13 +19,13 @@
                 <!-- Category 3: New Passives -->
                 <node id="PassiveList">
                     <attribute id="Passives" type="LSString" value="CL_NewPassive1,CL_NewPassive2,CL_NewPassive3"/> <!-- Add your new passives here -->
-                    <attribute id="UUID" type="guid" value=""/> <!-- Assign a unique UUID -->
+                    <attribute id="UUID" type="guid" value="292f1de9-73f5-4471-ab57-9b0f494769d5"/> <!-- PLACEHOLDER Assign a unique UUID -->
                 </node>
                 
                 <!-- Category 4: Special Abilities -->
                 <node id="PassiveList">
                     <attribute id="Passives" type="LSString" value="CL_SpecialAbility1,CL_SpecialAbility2"/> <!-- Add any special abilities -->
-                    <attribute id="UUID" type="guid" value=""/> <!-- Assign a unique UUID -->
+                    <attribute id="UUID" type="guid" value="292f1de9-73f5-4471-ab57-9b0f494769d5"/> <!-- PLACEHOLDER Assign a unique UUID -->
                 </node>
                 
                 <!-- Continue with additional categories as needed -->
